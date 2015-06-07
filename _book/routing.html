@@ -1,0 +1,1343 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Routing | Laravel Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./middleware.html" />
+    
+    
+    <link rel="prev" href="./configuration.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.1" data-basepath="." data-revision="Sun Jun 07 2015 09:41:41 GMT+0530 (IST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Prologue</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="releases.html">
+            
+                
+                    <a href="./releases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Release Notes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="upgrade.html">
+            
+                
+                    <a href="./upgrade.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Upgrade Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="contributions.html">
+            
+                
+                    <a href="./contributions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Contribution Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Setup</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="homestead.html">
+            
+                
+                    <a href="./homestead.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Homestead
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> The Basics</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1" data-path="routing.html">
+            
+                
+                    <a href="./routing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Routing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="middleware.html">
+            
+                
+                    <a href="./middleware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Middleware
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="controllers.html">
+            
+                
+                    <a href="./controllers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Controllers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="requests.html">
+            
+                
+                    <a href="./requests.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="responses.html">
+            
+                
+                    <a href="./responses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Responses
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="views.html">
+            
+                
+                    <a href="./views.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Views
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="templates.html">
+            
+                
+                    <a href="./templates.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Blade Templates
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Architecture Foundations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lifecycle.html">
+            
+                
+                    <a href="./lifecycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request Lifecycle
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Application Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="providers.html">
+            
+                
+                    <a href="./providers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Service Providers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="container.html">
+            
+                
+                    <a href="./container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Service Container
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="contracts.html">
+            
+                
+                    <a href="./contracts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Contracts
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="facades.html">
+            
+                
+                    <a href="./facades.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Facades
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Services</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="authentication.html">
+            
+                
+                    <a href="./authentication.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Authentication
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="billing.html">
+            
+                
+                    <a href="./billing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Billing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cache.html">
+            
+                
+                    <a href="./cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Cache
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="collections.html">
+            
+                
+                    <a href="./collections.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Collections
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="bus.html">
+            
+                
+                    <a href="./bus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Command Bus
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="extending.html">
+            
+                
+                    <a href="./extending.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Core Extension
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="elixir.html">
+            
+                
+                    <a href="./elixir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="encryption.html">
+            
+                
+                    <a href="./encryption.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Encryption
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Errors &amp; Logging
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="filesystem.html">
+            
+                
+                    <a href="./filesystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Filesystem / Cloud Storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="hashing.html">
+            
+                
+                    <a href="./hashing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        Hashing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="helpers.html">
+            
+                
+                    <a href="./helpers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        Helpers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="localization.html">
+            
+                
+                    <a href="./localization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.15.</b>
+                        
+                        Localization
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="mail.html">
+            
+                
+                    <a href="./mail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.16.</b>
+                        
+                        Mail
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="packages.html">
+            
+                
+                    <a href="./packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.17.</b>
+                        
+                        Package Development
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="pagination.html">
+            
+                
+                    <a href="./pagination.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.18.</b>
+                        
+                        Pagination
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="queues.html">
+            
+                
+                    <a href="./queues.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.19.</b>
+                        
+                        Queues
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="redis.html">
+            
+                
+                    <a href="./redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.20.</b>
+                        
+                        Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="session.html">
+            
+                
+                    <a href="./session.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.21.</b>
+                        
+                        Session
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="envoy.html">
+            
+                
+                    <a href="./envoy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.22.</b>
+                        
+                        SSH Tasks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="scheduling.html">
+            
+            <span><b>5.23.</b> Task Scheduling</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.24.</b>
+                        
+                        Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="validation.html">
+            
+                
+                    <a href="./validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.25.</b>
+                        
+                        Validation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> Database</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="database.html">
+            
+                
+                    <a href="./database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="queries.html">
+            
+                
+                    <a href="./queries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Query Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="schema.html">
+            
+                
+                    <a href="./schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Schema Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="migrations.html">
+            
+                
+                    <a href="./migrations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Migrations &amp; Seeding
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> Eloquent ORM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="eloquent.html">
+            
+                
+                    <a href="./eloquent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> Artisan</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Development
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Laravel Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="http-routing">HTTP Routing</h1>
+<ul>
+<li><a href="#basic-routing">Basic Routing</a></li>
+<li><a href="#csrf-protection">CSRF Protection</a></li>
+<li><a href="#method-spoofing">Method Spoofing</a></li>
+<li><a href="#route-parameters">Route Parameters</a></li>
+<li><a href="#named-routes">Named Routes</a></li>
+<li><a href="#route-groups">Route Groups</a></li>
+<li><a href="#route-model-binding">Route Model Binding</a></li>
+<li><a href="#throwing-404-errors">Throwing 404 Errors</a></li>
+</ul>
+<p><a name="basic-routing"></a></p>
+<h2 id="basic-routing">Basic Routing</h2>
+<p>You will define most of the routes for your application in the <code>app/Http/routes.php</code> file, which is loaded by the <code>App\Providers\RouteServiceProvider</code> class. The most basic Laravel routes simply accept a URI and a <code>Closure</code>:</p>
+<h4 id="basic-get-route">Basic GET Route</h4>
+<pre><code>Route::get(&apos;/&apos;, function()
+{
+    return &apos;Hello World&apos;;
+});
+</code></pre><h4 id="other-basic-routes">Other Basic Routes</h4>
+<pre><code>Route::post(&apos;foo/bar&apos;, function()
+{
+    return &apos;Hello World&apos;;
+});
+
+Route::put(&apos;foo/bar&apos;, function()
+{
+    //
+});
+
+Route::delete(&apos;foo/bar&apos;, function()
+{
+    //
+});
+</code></pre><h4 id="registering-a-route-for-multiple-verbs">Registering A Route For Multiple Verbs</h4>
+<pre><code>Route::match([&apos;get&apos;, &apos;post&apos;], &apos;/&apos;, function()
+{
+    return &apos;Hello World&apos;;
+});
+</code></pre><h4 id="registering-a-route-that-responds-to-any-http-verb">Registering A Route That Responds To Any HTTP Verb</h4>
+<pre><code>Route::any(&apos;foo&apos;, function()
+{
+    return &apos;Hello World&apos;;
+});
+</code></pre><p>Often, you will need to generate URLs to your routes, you may do so using the <code>url</code> helper:</p>
+<pre><code>$url = url(&apos;foo&apos;);
+</code></pre><p><a name="csrf-protection"></a></p>
+<h2 id="csrf-protection">CSRF Protection</h2>
+<p>Laravel makes it easy to protect your application from <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery" target="_blank">cross-site request forgeries</a>. Cross-site request forgeries are a type of malicious exploit whereby unauthorized commands are performed on behalf of the authenticated user.</p>
+<p>Laravel automatically generates a CSRF &quot;token&quot; for each active user session managed by the application. This token is used to verify that the authenticated user is the one actually making the requests to the application.</p>
+<h4 id="insert-the-csrf-token-into-a-form">Insert The CSRF Token Into A Form</h4>
+<pre><code>&lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;&lt;?php echo csrf_token(); ?&gt;&quot;&gt;
+</code></pre><p>Of course, using the Blade <a href="docs/templates">templating engine</a>:</p>
+<pre><code>&lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;{{ csrf_token() }}&quot;&gt;
+</code></pre><p>You do not need to manually verify the CSRF token on POST, PUT, or DELETE requests. The <code>VerifyCsrfToken</code> <a href="docs/middleware">HTTP middleware</a> will verify token in the request input matches the token stored in the session.</p>
+<h4 id="x-csrf-token">X-CSRF-TOKEN</h4>
+<p>In addition to looking for the CSRF token as a &quot;POST&quot; parameter, the middleware will also check for the <code>X-CSRF-TOKEN</code> request header. You could, for example, store the token in a &quot;meta&quot; tag and instruct jQuery to add it to all request headers:</p>
+<pre><code>&lt;meta name=&quot;csrf-token&quot; content=&quot;{{ csrf_token() }}&quot; /&gt;
+
+$.ajaxSetup({
+        headers: {
+            &apos;X-CSRF-TOKEN&apos;: $(&apos;meta[name=&quot;csrf-token&quot;]&apos;).attr(&apos;content&apos;)
+        }
+    });
+</code></pre><p>Now all AJAX requests will automatically include the CSRF token:</p>
+<pre><code>$.ajax({
+   url: &quot;/foo/bar&quot;,
+})
+</code></pre><h4 id="x-xsrf-token">X-XSRF-TOKEN</h4>
+<p>Laravel also stores the CSRF token in a <code>XSRF-TOKEN</code> cookie. You can use the cookie value to set the <code>X-XSRF-TOKEN</code> request header. Some JavaScript frameworks, like Angular, do this automatically for you.</p>
+<blockquote>
+<p>Note: The difference between the <code>X-CSRF-TOKEN</code> and <code>X-XSRF-TOKEN</code> is that the first uses a plain text value and the latter uses an encrypted value, because cookies in Laravel are always encrypted. If you use the <code>csrf_token()</code> function to supply the token value, you probably want to use the <code>X-CSRF-TOKEN</code> header.</p>
+</blockquote>
+<p><a name="method-spoofing"></a></p>
+<h2 id="method-spoofing">Method Spoofing</h2>
+<p>HTML forms do not support <code>PUT</code>, <code>PATCH</code> or <code>DELETE</code> actions. So, when defining <code>PUT</code>, <code>PATCH</code> or <code>DELETE</code> routes that are called from an HTML form, you will need to add a hidden <code>_method</code> field to the form.</p>
+<p>The value sent with the <code>_method</code> field will be used as the HTTP request method. For example:</p>
+<pre><code>&lt;form action=&quot;/foo/bar&quot; method=&quot;POST&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;_method&quot; value=&quot;PUT&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;_token&quot; value=&quot;&lt;?php echo csrf_token(); ?&gt;&quot;&gt;
+&lt;/form&gt;
+</code></pre><p><a name="route-parameters"></a></p>
+<h2 id="route-parameters">Route Parameters</h2>
+<p>Of course, you can capture segments of the request URI within your route:</p>
+<h4 id="basic-route-parameter">Basic Route Parameter</h4>
+<pre><code>Route::get(&apos;user/{id}&apos;, function($id)
+{
+    return &apos;User &apos;.$id;
+});
+</code></pre><blockquote>
+<p><strong>Note:</strong> Route parameters cannot contain the <code>-</code> character. Use an underscore (<code>_</code>) instead.</p>
+</blockquote>
+<h4 id="optional-route-parameters">Optional Route Parameters</h4>
+<pre><code>Route::get(&apos;user/{name?}&apos;, function($name = null)
+{
+    return $name;
+});
+</code></pre><h4 id="optional-route-parameters-with-default-value">Optional Route Parameters With Default Value</h4>
+<pre><code>Route::get(&apos;user/{name?}&apos;, function($name = &apos;John&apos;)
+{
+    return $name;
+});
+</code></pre><h4 id="regular-expression-parameter-constraints">Regular Expression Parameter Constraints</h4>
+<pre><code>Route::get(&apos;user/{name}&apos;, function($name)
+{
+    //
+})
+-&gt;where(&apos;name&apos;, &apos;[A-Za-z]+&apos;);
+
+Route::get(&apos;user/{id}&apos;, function($id)
+{
+    //
+})
+-&gt;where(&apos;id&apos;, &apos;[0-9]+&apos;);
+</code></pre><h4 id="passing-an-array-of-constraints">Passing An Array Of Constraints</h4>
+<pre><code>Route::get(&apos;user/{id}/{name}&apos;, function($id, $name)
+{
+    //
+})
+-&gt;where([&apos;id&apos; =&gt; &apos;[0-9]+&apos;, &apos;name&apos; =&gt; &apos;[a-z]+&apos;]);
+</code></pre><h4 id="defining-global-patterns">Defining Global Patterns</h4>
+<p>If you would like a route parameter to always be constrained by a given regular expression, you may use the <code>pattern</code> method. You should define these patterns in the <code>boot</code> method of your <code>RouteServiceProvider</code>:</p>
+<pre><code>$router-&gt;pattern(&apos;id&apos;, &apos;[0-9]+&apos;);
+</code></pre><p>Once the pattern has been defined, it is applied to all routes using that parameter:</p>
+<pre><code>Route::get(&apos;user/{id}&apos;, function($id)
+{
+    // Only called if {id} is numeric.
+});
+</code></pre><h4 id="accessing-a-route-parameter-value">Accessing A Route Parameter Value</h4>
+<p>If you need to access a route parameter value outside of a route, use the <code>input</code> method:</p>
+<pre><code>if ($route-&gt;input(&apos;id&apos;) == 1)
+{
+    //
+}
+</code></pre><p>You may also access the current route parameters via the <code>Illuminate\Http\Request</code> instance. The request instance for the current request may be accessed via the <code>Request</code> facade, or by type-hinting the <code>Illuminate\Http\Request</code> where dependencies are injected:</p>
+<pre><code>use Illuminate\Http\Request;
+
+Route::get(&apos;user/{id}&apos;, function(Request $request, $id)
+{
+    if ($request-&gt;route(&apos;id&apos;))
+    {
+        //
+    }
+});
+</code></pre><p><a name="named-routes"></a></p>
+<h2 id="named-routes">Named Routes</h2>
+<p>Named routes allow you to conveniently generate URLs or redirects for a specific route. You may specify a name for a route with the <code>as</code> array key:</p>
+<pre><code>Route::get(&apos;user/profile&apos;, [&apos;as&apos; =&gt; &apos;profile&apos;, function()
+{
+    //
+}]);
+</code></pre><p>You may also specify route names for controller actions:</p>
+<pre><code>Route::get(&apos;user/profile&apos;, [
+    &apos;as&apos; =&gt; &apos;profile&apos;, &apos;uses&apos; =&gt; &apos;UserController@showProfile&apos;
+]);
+</code></pre><p>Now, you may use the route&apos;s name when generating URLs or redirects:</p>
+<pre><code>$url = route(&apos;profile&apos;);
+
+$redirect = redirect()-&gt;route(&apos;profile&apos;);
+</code></pre><p>The <code>currentRouteName</code> method returns the name of the route handling the current request:</p>
+<pre><code>$name = Route::currentRouteName();
+</code></pre><p><a name="route-groups"></a></p>
+<h2 id="route-groups">Route Groups</h2>
+<p>Sometimes many of your routes will share common requirements such as URL segments, middleware, namespaces, etc. Instead of specifying each of these options on every route individually, you may use a route group to apply attributes to many routes.</p>
+<p>Shared attributes are specified in an array format as the first parameter to the <code>Route::group</code> method.</p>
+<p><a name="route-group-middleware"></a></p>
+<h3 id="middleware">Middleware</h3>
+<p>Middleware are applied to all routes within the group by defining the list of middleware with the <code>middleware</code> parameter on the group attribute array. Middleware will be executed in the order you define this array:</p>
+<pre><code>Route::group([&apos;middleware&apos; =&gt; [&apos;foo&apos;, &apos;bar&apos;]], function()
+{
+    Route::get(&apos;/&apos;, function()
+    {
+        // Has Foo And Bar Middleware
+    });
+
+    Route::get(&apos;user/profile&apos;, function()
+    {
+        // Has Foo And Bar Middleware
+    });
+
+});
+</code></pre><p><a name="route-group-namespace"></a></p>
+<h3 id="namespaces">Namespaces</h3>
+<p>You may use the <code>namespace</code> parameter in your group attribute array to specify the namespace for all controllers within the group:</p>
+<pre><code>Route::group([&apos;namespace&apos; =&gt; &apos;Admin&apos;], function()
+{
+    // Controllers Within The &quot;App\Http\Controllers\Admin&quot; Namespace
+
+    Route::group([&apos;namespace&apos; =&gt; &apos;User&apos;], function()
+    {
+        // Controllers Within The &quot;App\Http\Controllers\Admin\User&quot; Namespace
+    });
+});
+</code></pre><blockquote>
+<p><strong>Note:</strong> By default, the <code>RouteServiceProvider</code> includes your <code>routes.php</code> file within a namespace group, allowing you to register controller routes without specifying the full <code>App\Http\Controllers</code> namespace prefix.</p>
+</blockquote>
+<p><a name="sub-domain-routing"></a></p>
+<h3 id="sub-domain-routing">Sub-Domain Routing</h3>
+<p>Laravel routes also handle wildcard sub-domains, and will pass your wildcard parameters from the domain:</p>
+<h4 id="registering-sub-domain-routes">Registering Sub-Domain Routes</h4>
+<pre><code>Route::group([&apos;domain&apos; =&gt; &apos;{account}.myapp.com&apos;], function()
+{
+
+    Route::get(&apos;user/{id}&apos;, function($account, $id)
+    {
+        //
+    });
+
+});
+</code></pre><p><a name="route-prefixing"></a></p>
+<h3 id="route-prefixing">Route Prefixing</h3>
+<p>A group of routes may be prefixed by using the <code>prefix</code> option in the attributes array of a group:</p>
+<pre><code>Route::group([&apos;prefix&apos; =&gt; &apos;admin&apos;], function()
+{
+    Route::get(&apos;users&apos;, function()
+    {
+        // Matches The &quot;/admin/users&quot; URL
+    });
+});
+</code></pre><p>You can also utilize the <code>prefix</code> parameter to pass common parameters to your routes:</p>
+<h4 id="registering-a-url-parameter-in-a-route-prefix">Registering a URL parameter in a route prefix</h4>
+<pre><code>Route::group([&apos;prefix&apos; =&gt; &apos;accounts/{account_id}&apos;], function()
+{
+    Route::get(&apos;detail&apos;, function($account_id)
+    {
+        //
+    });
+});
+</code></pre><p>You can even define parameter constraints for the named parameters in your prefix:</p>
+<pre><code>Route::group([
+    &apos;prefix&apos; =&gt; &apos;accounts/{account_id}&apos;,
+    &apos;where&apos; =&gt; [&apos;account_id&apos; =&gt; &apos;[0-9]+&apos;],
+], function() {
+
+    // Define Routes Here
+});
+</code></pre><p><a name="route-model-binding"></a></p>
+<h2 id="route-model-binding">Route Model Binding</h2>
+<p>Laravel model binding provides a convenient way to inject class instances into your routes. For example, instead of injecting a user&apos;s ID, you can inject the entire User class instance that matches the given ID.</p>
+<p>First, use the router&apos;s <code>model</code> method to specify the class for a given parameter. You should define your model bindings in the <code>RouteServiceProvider::boot</code> method:</p>
+<h4 id="binding-a-parameter-to-a-model">Binding A Parameter To A Model</h4>
+<pre><code>public function boot(Router $router)
+{
+    parent::boot($router);
+
+    $router-&gt;model(&apos;user&apos;, &apos;App\User&apos;);
+}
+</code></pre><p>Next, define a route that contains a <code>{user}</code> parameter:</p>
+<pre><code>Route::get(&apos;profile/{user}&apos;, function(App\User $user)
+{
+    //
+});
+</code></pre><p>Since we have bound the <code>{user}</code> parameter to the <code>App\User</code> model, a <code>User</code> instance will be injected into the route. So, for example, a request to <code>profile/1</code> will inject the <code>User</code> instance which has an ID of 1.</p>
+<blockquote>
+<p><strong>Note:</strong> If a matching model instance is not found in the database, a 404 error will be thrown.</p>
+</blockquote>
+<p>If you wish to specify your own &quot;not found&quot; behavior, pass a Closure as the third argument to the <code>model</code> method:</p>
+<pre><code>Route::model(&apos;user&apos;, &apos;User&apos;, function()
+{
+    throw new NotFoundHttpException;
+});
+</code></pre><p>If you wish to use your own resolution logic, you should use the <code>Route::bind</code> method. The Closure you pass to the <code>bind</code> method will receive the value of the URI segment, and should return an instance of the class you want to be injected into the route:</p>
+<pre><code>Route::bind(&apos;user&apos;, function($value)
+{
+    return User::where(&apos;name&apos;, $value)-&gt;first();
+});
+</code></pre><p><a name="throwing-404-errors"></a></p>
+<h2 id="throwing-404-errors">Throwing 404 Errors</h2>
+<p>There are two ways to manually trigger a 404 error from a route. First, you may use the <code>abort</code> helper:</p>
+<pre><code>abort(404);
+</code></pre><p>The <code>abort</code> helper simply throws a <code>Symfony\Component\HttpKernel\Exception\HttpException</code> with the specified status code.</p>
+<p>Secondly, you may manually throw an instance of <code>Symfony\Component\HttpKernel\Exception\NotFoundHttpException</code>.</p>
+<p>More information on handling 404 exceptions and using custom responses for these errors may be found in the <a href="docs/errors#http-exceptions">errors</a> section of the documentation.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./configuration.html" class="navigation navigation-prev " aria-label="Previous page: Configuration"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./middleware.html" class="navigation navigation-next " aria-label="Next page: Middleware"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

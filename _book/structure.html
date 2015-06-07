@@ -1,0 +1,1108 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Application Structure | Laravel Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./providers.html" />
+    
+    
+    <link rel="prev" href="./lifecycle.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4.2" data-basepath="." data-revision="Sun Jun 07 2015 09:41:41 GMT+0530 (IST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Prologue</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="releases.html">
+            
+                
+                    <a href="./releases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Release Notes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="upgrade.html">
+            
+                
+                    <a href="./upgrade.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Upgrade Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="contributions.html">
+            
+                
+                    <a href="./contributions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Contribution Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Setup</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="homestead.html">
+            
+                
+                    <a href="./homestead.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Homestead
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> The Basics</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="routing.html">
+            
+                
+                    <a href="./routing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Routing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="middleware.html">
+            
+                
+                    <a href="./middleware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Middleware
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="controllers.html">
+            
+                
+                    <a href="./controllers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Controllers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="requests.html">
+            
+                
+                    <a href="./requests.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="responses.html">
+            
+                
+                    <a href="./responses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Responses
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="views.html">
+            
+                
+                    <a href="./views.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Views
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="templates.html">
+            
+                
+                    <a href="./templates.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Blade Templates
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Architecture Foundations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lifecycle.html">
+            
+                
+                    <a href="./lifecycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request Lifecycle
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Application Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="providers.html">
+            
+                
+                    <a href="./providers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Service Providers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="container.html">
+            
+                
+                    <a href="./container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Service Container
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="contracts.html">
+            
+                
+                    <a href="./contracts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Contracts
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="facades.html">
+            
+                
+                    <a href="./facades.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Facades
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Services</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="authentication.html">
+            
+                
+                    <a href="./authentication.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Authentication
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="billing.html">
+            
+                
+                    <a href="./billing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Billing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cache.html">
+            
+                
+                    <a href="./cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Cache
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="collections.html">
+            
+                
+                    <a href="./collections.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Collections
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="bus.html">
+            
+                
+                    <a href="./bus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Command Bus
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="extending.html">
+            
+                
+                    <a href="./extending.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Core Extension
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="elixir.html">
+            
+                
+                    <a href="./elixir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="encryption.html">
+            
+                
+                    <a href="./encryption.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Encryption
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Errors &amp; Logging
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="filesystem.html">
+            
+                
+                    <a href="./filesystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Filesystem / Cloud Storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="hashing.html">
+            
+                
+                    <a href="./hashing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        Hashing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="helpers.html">
+            
+                
+                    <a href="./helpers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        Helpers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="localization.html">
+            
+                
+                    <a href="./localization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.15.</b>
+                        
+                        Localization
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="mail.html">
+            
+                
+                    <a href="./mail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.16.</b>
+                        
+                        Mail
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="packages.html">
+            
+                
+                    <a href="./packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.17.</b>
+                        
+                        Package Development
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="pagination.html">
+            
+                
+                    <a href="./pagination.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.18.</b>
+                        
+                        Pagination
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="queues.html">
+            
+                
+                    <a href="./queues.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.19.</b>
+                        
+                        Queues
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="redis.html">
+            
+                
+                    <a href="./redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.20.</b>
+                        
+                        Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="session.html">
+            
+                
+                    <a href="./session.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.21.</b>
+                        
+                        Session
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="envoy.html">
+            
+                
+                    <a href="./envoy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.22.</b>
+                        
+                        SSH Tasks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="scheduling.html">
+            
+            <span><b>5.23.</b> Task Scheduling</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.24.</b>
+                        
+                        Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="validation.html">
+            
+                
+                    <a href="./validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.25.</b>
+                        
+                        Validation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> Database</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="database.html">
+            
+                
+                    <a href="./database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="queries.html">
+            
+                
+                    <a href="./queries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Query Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="schema.html">
+            
+                
+                    <a href="./schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Schema Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="migrations.html">
+            
+                
+                    <a href="./migrations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Migrations &amp; Seeding
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> Eloquent ORM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="eloquent.html">
+            
+                
+                    <a href="./eloquent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> Artisan</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Development
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Laravel Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="application-structure">Application Structure</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#the-root-directory">The Root Directory</a></li>
+<li><a href="#the-app-directory">The App Directory</a></li>
+<li><a href="#namespacing-your-application">Namespacing Your Application</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>The default Laravel application structure is intended to provide a great starting point for both large and small applications. Of course, you are free to organize your application however you like. Laravel imposes almost no restrictions on where any given class is located - as long as Composer can autoload the class.</p>
+<p><a name="the-root-directory"></a></p>
+<h2 id="the-root-directory">The Root Directory</h2>
+<p>The root directory of a fresh Laravel installation contains a variety of folders:</p>
+<p>The <code>app</code> directory, as you might expect, contains the core code of your application. We&apos;ll explore this folder in more detail soon.</p>
+<p>The <code>bootstrap</code> folder contains a few files that bootstrap the framework and configure autoloading.</p>
+<p>The <code>config</code> directory, as the name implies, contains all of your application&apos;s configuration files.</p>
+<p>The <code>database</code> folder contains your database migration and seeds.</p>
+<p>The <code>public</code> directory contains the front controller and your assets (images, JavaScript, CSS, etc.).</p>
+<p>The <code>resources</code> directory contains your views, raw assets (LESS, SASS, CoffeeScript), and &quot;language&quot; files.</p>
+<p>The <code>storage</code> directory contains compiled Blade templates, file based sessions, file caches, and other files generated by the framework.</p>
+<p>The <code>tests</code> directory contains your automated tests.</p>
+<p>The <code>vendor</code> directory contains your Composer dependencies.</p>
+<p><a name="the-app-directory"></a></p>
+<h2 id="the-app-directory">The App Directory</h2>
+<p>The &quot;meat&quot; of your application lives in the <code>app</code> directory. By default, this directory is namespaced under <code>App</code> and is autoloaded by Composer using the <a href="http://www.php-fig.org/psr/psr-4/" target="_blank">PSR-4 autoloading standard</a>. <strong>You may change this namespace using the <code>app:name</code> Artisan command</strong>.</p>
+<p>The <code>app</code> directory ships with a variety of additional directories such as <code>Console</code>, <code>Http</code>, and <code>Providers</code>. Think of the <code>Console</code> and <code>Http</code> directories as providing an API into the &quot;core&quot; of your application. The HTTP protocol and CLI are both mechanisms to interact with your application, but do not actually contain application logic. In other words, they are simply two ways of issuing commands to your application. The <code>Console</code> directory contains all of your Artisan commands, while the <code>Http</code> directory contains your controllers, filters, and requests.</p>
+<p>The <code>Commands</code> directory, of course, houses the commands for your application. Commands represent jobs that can be queued by your application, as well as tasks that you can run synchronously within the current request lifecycle.</p>
+<p>The <code>Events</code> directory, as you might expect, houses event classes. Of course, using classes to represent events is not required; however, if you choose to use them, this directory is the default location they will be created by the Artisan command line.</p>
+<p>The <code>Handlers</code> directory contains the handler classes for both commands and events. Handlers receive a command or event and perform logic in response to that command or event being fired.</p>
+<p>The <code>Services</code> directory contains various &quot;helper&quot; services your application needs to function. For example, the <code>Registrar</code> service included with Laravel is responsible for validating and creating new users of your application. Other examples might be services to interact with external APIs, metrics systems, or even services that aggregate data from your own application.</p>
+<p>The <code>Exceptions</code> directory contains your application&apos;s exception handler and is also a good place to stick any exceptions thrown by your application.</p>
+<blockquote>
+<p><strong>Note:</strong> Many of the classes in the <code>app</code> directory can be generated by Artisan via commands. To review the available commands, run the <code>php artisan list make</code> command in your terminal.</p>
+</blockquote>
+<p><a name="namespacing-your-application"></a></p>
+<h2 id="namespacing-your-application">Namespacing Your Application</h2>
+<p>As discussed above, the default application namespace is <code>App</code>; however, you may change this namespace to match the name of your application, which is easily done via the <code>app:name</code> Artisan command. For example, if your application is named &quot;SocialNet&quot;, you would run the following command:</p>
+<pre><code>php artisan app:name SocialNet
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./lifecycle.html" class="navigation navigation-prev " aria-label="Previous page: Request Lifecycle"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./providers.html" class="navigation navigation-next " aria-label="Next page: Service Providers"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

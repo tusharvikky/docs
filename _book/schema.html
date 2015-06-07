@@ -1,0 +1,1410 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Schema Builder | Laravel Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./migrations.html" />
+    
+    
+    <link rel="prev" href="./queries.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="6.3" data-basepath="." data-revision="Sun Jun 07 2015 09:41:41 GMT+0530 (IST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Prologue</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="releases.html">
+            
+                
+                    <a href="./releases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Release Notes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="upgrade.html">
+            
+                
+                    <a href="./upgrade.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Upgrade Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="contributions.html">
+            
+                
+                    <a href="./contributions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Contribution Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Setup</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="homestead.html">
+            
+                
+                    <a href="./homestead.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Homestead
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> The Basics</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="routing.html">
+            
+                
+                    <a href="./routing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Routing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="middleware.html">
+            
+                
+                    <a href="./middleware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Middleware
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="controllers.html">
+            
+                
+                    <a href="./controllers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Controllers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="requests.html">
+            
+                
+                    <a href="./requests.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="responses.html">
+            
+                
+                    <a href="./responses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Responses
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="views.html">
+            
+                
+                    <a href="./views.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Views
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="templates.html">
+            
+                
+                    <a href="./templates.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Blade Templates
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Architecture Foundations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lifecycle.html">
+            
+                
+                    <a href="./lifecycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request Lifecycle
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Application Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="providers.html">
+            
+                
+                    <a href="./providers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Service Providers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="container.html">
+            
+                
+                    <a href="./container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Service Container
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="contracts.html">
+            
+                
+                    <a href="./contracts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Contracts
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="facades.html">
+            
+                
+                    <a href="./facades.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Facades
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Services</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="authentication.html">
+            
+                
+                    <a href="./authentication.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Authentication
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="billing.html">
+            
+                
+                    <a href="./billing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Billing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cache.html">
+            
+                
+                    <a href="./cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Cache
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="collections.html">
+            
+                
+                    <a href="./collections.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Collections
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="bus.html">
+            
+                
+                    <a href="./bus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Command Bus
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="extending.html">
+            
+                
+                    <a href="./extending.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Core Extension
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="elixir.html">
+            
+                
+                    <a href="./elixir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="encryption.html">
+            
+                
+                    <a href="./encryption.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Encryption
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Errors &amp; Logging
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="filesystem.html">
+            
+                
+                    <a href="./filesystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Filesystem / Cloud Storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="hashing.html">
+            
+                
+                    <a href="./hashing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        Hashing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="helpers.html">
+            
+                
+                    <a href="./helpers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        Helpers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="localization.html">
+            
+                
+                    <a href="./localization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.15.</b>
+                        
+                        Localization
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="mail.html">
+            
+                
+                    <a href="./mail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.16.</b>
+                        
+                        Mail
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="packages.html">
+            
+                
+                    <a href="./packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.17.</b>
+                        
+                        Package Development
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="pagination.html">
+            
+                
+                    <a href="./pagination.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.18.</b>
+                        
+                        Pagination
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="queues.html">
+            
+                
+                    <a href="./queues.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.19.</b>
+                        
+                        Queues
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="redis.html">
+            
+                
+                    <a href="./redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.20.</b>
+                        
+                        Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="session.html">
+            
+                
+                    <a href="./session.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.21.</b>
+                        
+                        Session
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="envoy.html">
+            
+                
+                    <a href="./envoy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.22.</b>
+                        
+                        SSH Tasks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="scheduling.html">
+            
+            <span><b>5.23.</b> Task Scheduling</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.24.</b>
+                        
+                        Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="validation.html">
+            
+                
+                    <a href="./validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.25.</b>
+                        
+                        Validation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> Database</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="database.html">
+            
+                
+                    <a href="./database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="queries.html">
+            
+                
+                    <a href="./queries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Query Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.3" data-path="schema.html">
+            
+                
+                    <a href="./schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Schema Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="migrations.html">
+            
+                
+                    <a href="./migrations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Migrations &amp; Seeding
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> Eloquent ORM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="eloquent.html">
+            
+                
+                    <a href="./eloquent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> Artisan</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Development
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Laravel Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="schema-builder">Schema Builder</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#creating-and-dropping-tables">Creating &amp; Dropping Tables</a></li>
+<li><a href="#adding-columns">Adding Columns</a></li>
+<li><a href="#changing-columns">Changing Columns</a></li>
+<li><a href="#renaming-columns">Renaming Columns</a></li>
+<li><a href="#dropping-columns">Dropping Columns</a></li>
+<li><a href="#checking-existence">Checking Existence</a></li>
+<li><a href="#adding-indexes">Adding Indexes</a></li>
+<li><a href="#foreign-keys">Foreign Keys</a></li>
+<li><a href="#dropping-indexes">Dropping Indexes</a></li>
+<li><a href="#dropping-timestamps">Dropping Timestamps &amp; Soft Deletes</a></li>
+<li><a href="#storage-engines">Storage Engines</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>The Laravel <code>Schema</code> class provides a database agnostic way of manipulating tables. It works well with all of the databases supported by Laravel, and has a unified API across all of these systems.</p>
+<p><a name="creating-and-dropping-tables"></a></p>
+<h2 id="creating-dropping-tables">Creating &amp; Dropping Tables</h2>
+<p>To create a new database table, the <code>Schema::create</code> method is used:</p>
+<pre><code>Schema::create(&apos;users&apos;, function($table)
+{
+    $table-&gt;increments(&apos;id&apos;);
+});
+</code></pre><p>The first argument passed to the <code>create</code> method is the name of the table, and the second is a <code>Closure</code> which will receive a <code>Blueprint</code> object which may be used to define the new table.</p>
+<p>To rename an existing database table, the <code>rename</code> method may be used:</p>
+<pre><code>Schema::rename($from, $to);
+</code></pre><p>To specify which connection the schema operation should take place on, use the <code>Schema::connection</code> method:</p>
+<pre><code>Schema::connection(&apos;foo&apos;)-&gt;create(&apos;users&apos;, function($table)
+{
+    $table-&gt;increments(&apos;id&apos;);
+});
+</code></pre><p>To drop a table, you may use the <code>Schema::drop</code> method:</p>
+<pre><code>Schema::drop(&apos;users&apos;);
+
+Schema::dropIfExists(&apos;users&apos;);
+</code></pre><p><a name="adding-columns"></a></p>
+<h2 id="adding-columns">Adding Columns</h2>
+<p>To update an existing table, we will use the <code>Schema::table</code> method:</p>
+<pre><code>Schema::table(&apos;users&apos;, function($table)
+{
+    $table-&gt;string(&apos;email&apos;);
+});
+</code></pre><p>The table builder contains a variety of column types that you may use when building your tables:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;bigIncrements(&apos;id&apos;);</code></td>
+<td>Incrementing ID using a &quot;big integer&quot; equivalent</td>
+</tr>
+<tr>
+<td><code>$table-&gt;bigInteger(&apos;votes&apos;);</code></td>
+<td>BIGINT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;binary(&apos;data&apos;);</code></td>
+<td>BLOB equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;boolean(&apos;confirmed&apos;);</code></td>
+<td>BOOLEAN equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;char(&apos;name&apos;, 4);</code></td>
+<td>CHAR equivalent with a length</td>
+</tr>
+<tr>
+<td><code>$table-&gt;date(&apos;created_at&apos;);</code></td>
+<td>DATE equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dateTime(&apos;created_at&apos;);</code></td>
+<td>DATETIME equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;decimal(&apos;amount&apos;, 5, 2);</code></td>
+<td>DECIMAL equivalent with a precision and scale</td>
+</tr>
+<tr>
+<td><code>$table-&gt;double(&apos;column&apos;, 15, 8);</code></td>
+<td>DOUBLE equivalent with precision, 15 digits in total and 8 after the decimal point</td>
+</tr>
+<tr>
+<td><code>$table-&gt;enum(&apos;choices&apos;, [&apos;foo&apos;, &apos;bar&apos;]);</code></td>
+<td>ENUM equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;float(&apos;amount&apos;);</code></td>
+<td>FLOAT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;increments(&apos;id&apos;);</code></td>
+<td>Incrementing ID to the table (primary key)</td>
+</tr>
+<tr>
+<td><code>$table-&gt;integer(&apos;votes&apos;);</code></td>
+<td>INTEGER equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;json(&apos;options&apos;);</code></td>
+<td>JSON equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;jsonb(&apos;options&apos;);</code></td>
+<td>JSONB equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;longText(&apos;description&apos;);</code></td>
+<td>LONGTEXT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;mediumInteger(&apos;numbers&apos;);</code></td>
+<td>MEDIUMINT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;mediumText(&apos;description&apos;);</code></td>
+<td>MEDIUMTEXT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;morphs(&apos;taggable&apos;);</code></td>
+<td>Adds INTEGER <code>taggable_id</code> and STRING <code>taggable_type</code></td>
+</tr>
+<tr>
+<td><code>$table-&gt;nullableTimestamps();</code></td>
+<td>Same as <code>timestamps()</code>, except allows NULLs</td>
+</tr>
+<tr>
+<td><code>$table-&gt;smallInteger(&apos;votes&apos;);</code></td>
+<td>SMALLINT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;tinyInteger(&apos;numbers&apos;);</code></td>
+<td>TINYINT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;softDeletes();</code></td>
+<td>Adds <strong>deleted_at</strong> column for soft deletes</td>
+</tr>
+<tr>
+<td><code>$table-&gt;string(&apos;email&apos;);</code></td>
+<td>VARCHAR equivalent column</td>
+</tr>
+<tr>
+<td><code>$table-&gt;string(&apos;name&apos;, 100);</code></td>
+<td>VARCHAR equivalent with a length</td>
+</tr>
+<tr>
+<td><code>$table-&gt;text(&apos;description&apos;);</code></td>
+<td>TEXT equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;time(&apos;sunrise&apos;);</code></td>
+<td>TIME equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;timestamp(&apos;added_on&apos;);</code></td>
+<td>TIMESTAMP equivalent to the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;timestamps();</code></td>
+<td>Adds <strong>created_at</strong> and <strong>updated_at</strong> columns</td>
+</tr>
+<tr>
+<td><code>$table-&gt;rememberToken();</code></td>
+<td>Adds <code>remember_token</code> as VARCHAR(100) NULL</td>
+</tr>
+<tr>
+<td><code>-&gt;nullable()</code></td>
+<td>Designate that the column allows NULL values</td>
+</tr>
+<tr>
+<td><code>-&gt;default($value)</code></td>
+<td>Declare a default value for a column</td>
+</tr>
+<tr>
+<td><code>-&gt;unsigned()</code></td>
+<td>Set INTEGER to UNSIGNED</td>
+</tr>
+</tbody>
+</table>
+<h4 id="using-after-on-mysql">Using After On MySQL</h4>
+<p>If you are using the MySQL database, you may use the <code>after</code> method to specify the order of columns:</p>
+<pre><code>$table-&gt;string(&apos;name&apos;)-&gt;after(&apos;email&apos;);
+</code></pre><p><a name="changing-columns"></a></p>
+<h2 id="changing-columns">Changing Columns</h2>
+<p><strong>Note:</strong> Before changing a column, be sure to add the <code>doctrine/dbal</code> dependency to your <code>composer.json</code> file.</p>
+<p>Sometimes you may need to modify an existing column. For example, you may wish to increase the size of a string column. The <code>change</code> method makes it easy! For example, let&apos;s increase the size of the <code>name</code> column from 25 to 50:</p>
+<pre><code>Schema::table(&apos;users&apos;, function($table)
+{
+    $table-&gt;string(&apos;name&apos;, 50)-&gt;change();
+});
+</code></pre><p>We could also modify a column to be nullable:</p>
+<pre><code>Schema::table(&apos;users&apos;, function($table)
+{
+    $table-&gt;string(&apos;name&apos;, 50)-&gt;nullable()-&gt;change();
+});
+</code></pre><p><a name="renaming-columns"></a></p>
+<h2 id="renaming-columns">Renaming Columns</h2>
+<p>To rename a column, you may use the <code>renameColumn</code> method on the Schema builder. Before renaming a column, be sure to add the <code>doctrine/dbal</code> dependency to your <code>composer.json</code> file.</p>
+<pre><code>Schema::table(&apos;users&apos;, function($table)
+{
+    $table-&gt;renameColumn(&apos;from&apos;, &apos;to&apos;);
+});
+</code></pre><blockquote>
+<p><strong>Note:</strong> Renaming columns in a table with <code>enum</code> column is currently not supported.</p>
+</blockquote>
+<p><a name="dropping-columns"></a></p>
+<h2 id="dropping-columns">Dropping Columns</h2>
+<p>To drop a column, you may use the <code>dropColumn</code> method on the Schema builder. Before dropping a column, be sure to add the <code>doctrine/dbal</code> dependency to your <code>composer.json</code> file.</p>
+<h4 id="dropping-a-column-from-a-database-table">Dropping A Column From A Database Table</h4>
+<pre><code>Schema::table(&apos;users&apos;, function($table)
+{
+    $table-&gt;dropColumn(&apos;votes&apos;);
+});
+</code></pre><h4 id="dropping-multiple-columns-from-a-database-table">Dropping Multiple Columns From A Database Table</h4>
+<pre><code>Schema::table(&apos;users&apos;, function($table)
+{
+    $table-&gt;dropColumn([&apos;votes&apos;, &apos;avatar&apos;, &apos;location&apos;]);
+});
+</code></pre><p><a name="checking-existence"></a></p>
+<h2 id="checking-existence">Checking Existence</h2>
+<h4 id="checking-for-existence-of-table">Checking For Existence Of Table</h4>
+<p>You may easily check for the existence of a table or column using the <code>hasTable</code> and <code>hasColumn</code> methods:</p>
+<pre><code>if (Schema::hasTable(&apos;users&apos;))
+{
+    //
+}
+</code></pre><h4 id="checking-for-existence-of-columns">Checking For Existence Of Columns</h4>
+<pre><code>if (Schema::hasColumn(&apos;users&apos;, &apos;email&apos;))
+{
+    //
+}
+</code></pre><p><a name="adding-indexes"></a></p>
+<h2 id="adding-indexes">Adding Indexes</h2>
+<p>The schema builder supports several types of indexes. There are two ways to add them. First, you may fluently define them on a column definition, or you may add them separately:</p>
+<pre><code>$table-&gt;string(&apos;email&apos;)-&gt;unique();
+</code></pre><p>Or, you may choose to add the indexes on separate lines. Below is a list of all available index types:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;primary(&apos;id&apos;);</code></td>
+<td>Adding a primary key</td>
+</tr>
+<tr>
+<td><code>$table-&gt;primary([&apos;first&apos;, &apos;last&apos;]);</code></td>
+<td>Adding composite keys</td>
+</tr>
+<tr>
+<td><code>$table-&gt;unique(&apos;email&apos;);</code></td>
+<td>Adding a unique index</td>
+</tr>
+<tr>
+<td><code>$table-&gt;index(&apos;state&apos;);</code></td>
+<td>Adding a basic index</td>
+</tr>
+</tbody>
+</table>
+<p><a name="foreign-keys"></a></p>
+<h2 id="foreign-keys">Foreign Keys</h2>
+<p>Laravel also provides support for adding foreign key constraints to your tables:</p>
+<pre><code>$table-&gt;integer(&apos;user_id&apos;)-&gt;unsigned();
+$table-&gt;foreign(&apos;user_id&apos;)-&gt;references(&apos;id&apos;)-&gt;on(&apos;users&apos;);
+</code></pre><p>In this example, we are stating that the <code>user_id</code> column references the <code>id</code> column on the <code>users</code> table. Make sure to create the foreign key column first!</p>
+<p>You may also specify options for the &quot;on delete&quot; and &quot;on update&quot; actions of the constraint:</p>
+<pre><code>$table-&gt;foreign(&apos;user_id&apos;)
+      -&gt;references(&apos;id&apos;)-&gt;on(&apos;users&apos;)
+      -&gt;onDelete(&apos;cascade&apos;);
+</code></pre><p>To drop a foreign key, you may use the <code>dropForeign</code> method. A similar naming convention is used for foreign keys as is used for other indexes:</p>
+<pre><code>$table-&gt;dropForeign(&apos;posts_user_id_foreign&apos;);
+</code></pre><blockquote>
+<p><strong>Note:</strong> When creating a foreign key that references an incrementing integer, remember to always make the foreign key column <code>unsigned</code>.</p>
+</blockquote>
+<p><a name="dropping-indexes"></a></p>
+<h2 id="dropping-indexes">Dropping Indexes</h2>
+<p>To drop an index you must specify the index&apos;s name. Laravel assigns a reasonable name to the indexes by default. Simply concatenate the table name, the names of the column in the index, and the index type. Here are some examples:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;dropPrimary(&apos;users_id_primary&apos;);</code></td>
+<td>Dropping a primary key from the &quot;users&quot; table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dropUnique(&apos;users_email_unique&apos;);</code></td>
+<td>Dropping a unique index from the &quot;users&quot; table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dropIndex(&apos;geo_state_index&apos;);</code></td>
+<td>Dropping a basic index from the &quot;geo&quot; table</td>
+</tr>
+</tbody>
+</table>
+<p><a name="dropping-timestamps"></a></p>
+<h2 id="dropping-timestamps-softdeletes">Dropping Timestamps &amp; SoftDeletes</h2>
+<p>To drop the <code>timestamps</code>, <code>nullableTimestamps</code> or <code>softDeletes</code> column types, you may use the following methods:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$table-&gt;dropTimestamps();</code></td>
+<td>Dropping the <strong>created_at</strong> and <strong>updated_at</strong> columns from the table</td>
+</tr>
+<tr>
+<td><code>$table-&gt;dropSoftDeletes();</code></td>
+<td>Dropping <strong>deleted_at</strong> column from the table</td>
+</tr>
+</tbody>
+</table>
+<p><a name="storage-engines"></a></p>
+<h2 id="storage-engines">Storage Engines</h2>
+<p>To set the storage engine for a table, set the <code>engine</code> property on the schema builder:</p>
+<pre><code>Schema::create(&apos;users&apos;, function($table)
+{
+    $table-&gt;engine = &apos;InnoDB&apos;;
+
+    $table-&gt;string(&apos;email&apos;);
+});
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./queries.html" class="navigation navigation-prev " aria-label="Previous page: Query Builder"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./migrations.html" class="navigation navigation-next " aria-label="Next page: Migrations &amp; Seeding"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
