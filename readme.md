@@ -1,5 +1,6 @@
 # Laravel Documentation
 
-## Contribution Guidelines
+The best place to get yourself updated is through Official Documentation. This is nothing but a fork of the docs available at http://laravel.com/docs/5.0
 
-If you are submitting documentation for the **current stable release**, submit it to the corresponding branch. For example, documentation for Laravel 5.0 would be submitted to the `5.0` branch. Documentation intended for the next release of Laravel should be submitted to the `master` branch.
+ ** Please browse through the chapters **
+
