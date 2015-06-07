@@ -1,7 +1,6 @@
 # Release Notes
 
 - [Support Policy](#support-policy)
-- [Laravel 5.1](#laravel-5.1)
 - [Laravel 5.0](#laravel-5.0)
 - [Laravel 4.2](#laravel-4.2)
 - [Laravel 4.1](#laravel-4.1)
@@ -9,116 +8,14 @@
 <a name="support-policy"></a>
 ## Support Policy
 
-For LTS releases, such as Laravel 5.1, bug fixes are provided for 2 years and security fixes are provided for 3 years. These releases provide the longest window of support and maintenance.
+Security fixes are **always** applied to the previous major version of Laravel. Currently, **all** security fixes and patches will be applied to both Laravel 5.x **and** Laravel 4.x.
 
-For general releases, bug fixes are provided for 6 months and security fixes are provided for 1 year.
-
-<a name="laravel-5.1"></a>
-## Laravel 5.1
-
-Laravel 5.1 continues the improvements made in Laravel 5.0 by adopting PSR-2 and adding event broadcasting, middleware parameters, Artisan improvements, and more.
-
-### PHP 5.5.9+
-
-Since PHP 5.4 will enter "end of life" in September and will no longer receive security updates from the PHP development team, Laravel 5.1 requires PHP 5.5.9 or greater. PHP 5.5.9 allows compatibility with the latest versions of popular PHP libraries such as Guzzle and the AWS SDK.
-
-### LTS
-
- Laravel 5.1 is the first release of Laravel to receive **long term support**. Laravel 5.1 will receive bug fixes for 2 years and security fixes for 3 years. This support window is the largest ever provided for Laravel and provides stability and peace of mind for larger, enterprise clients and customers.
-
-### PSR-2
-
-The [PSR-2 coding style guide](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) has been adopted as the default style guide for the Laravel framework. Additionally, all generators have been updated to generate PSR-2 compatible syntax.
-
-### Documentation
-
-Every page of the Laravel documentation has been meticulously reviewed and dramatically improved. All code examples have also been reviewed and expanded to provide more relevance and context.
-
-### Event Broadcasting
-
-In many modern web applications, web sockets are used to implement real-time, live-updating user interfaces. When some data is updated on the server, a message is typically sent over a websocket connection to be handled by the client.
-
-To assist you in building these types of applications, Laravel makes it easy to "broadcast" your events over a websocket connection. Broadcasting your Laravel events allows you to share the same event names between your server-side code and your client-side JavaScript framework.
-
-To learn more about event broadcasting, check out the [event documentation](/docs/{{version}}/events#broadcasting-events)
-
-### Middleware Parameters
-
-Middleware can now receive additional custom parameters. For example, if your application needs to verify that the authenticated user has a given "role" before performing a given action, you could create a `RoleMiddleware` that receives a role name as an additional argument:
-
-	<?php namespace App\Http\Middleware;
-
-	use Closure;
-
-	class RoleMiddleware
-	{
-		/**
-		 * Run the request filter.
-		 *
-		 * @param  \Illuminate\Http\Request  $request
-		 * @param  \Closure  $next
-		 * @param  string  $role
-		 * @return mixed
-		 */
-		public function handle($request, Closure $next, $role)
-		{
-			if (! $request->user()->hasRole($role)) {
-				// Redirect...
-			}
-
-			return $next($request);
-		}
-
-	}
-
-Middleware parameters may be specified when defining the route by separating the middleware name and parameters with a `:`. Multiple parameters should be delimited by commas:
-
-	Route::put('post/{id}', ['middleware' => 'role:editor', function ($id) {
-		//
-	}]);
-
-For more information on middleware, check out the [middleware documentation](/docs/{{version}}/middleware).
-
-### Testing Overhaul
-
-The built-in testing capabilities of Laravel have been dramatically improved. A variety of new methods provide a fluent, expressive interface for interacting with your application and examining its responses. For example, check out the following test:
-
-    public function testNewUserRegistration()
-    {
-        $this->visit('/register')
-             ->type('Taylor', 'name')
-             ->check('terms')
-             ->press('Register')
-             ->seePageIs('/dashboard');
-    }
-
-For more information on testing, check out the [testing documentation](/docs/{{version}}/testing).
-
-### Artisan Improvements
-
-Artisan commands may now be defined using a simple, route-like "signature", which provides an extremely simple interface for defining command line arguments and options. For example, you may define a simple command and its options like so:
-
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'email:send {user} {--force}';
-
-For more information on defining Artisan commands, consult the [Artisan documentation](/docs/{{version}}/artisan).
-
-### Folder Structure
-
-To better express intent, the `app/Commands` directory has been renamed to `app/Jobs`. Additionally, the `app/Handlers` directory has been consolidated into a single `app/Listeners` directory which simply contains event listeners. However, this is not a breaking change and you are not required to update to the new folder structure to use Laravel 5.1.
-
-### Encryption
-
-In previous versions of Laravel, encryption was handled by the `mcrypt` PHP extension. However, beginning in Laravel 5.1, encryption is handled by the `openssl` extension, which is more actively maintained.
+When feasible, security fixes will also be applied to even older releases of the framework, such as Laravel 3.x.
 
 <a name="laravel-5.0"></a>
 ## Laravel 5.0
 
-Laravel 5.0 introduces a fresh application structure to the default Laravel project. This new structure serves as a better foundation for building a robust application in Laravel, as well as embraces new auto-loading standards (PSR-4) throughout the application. First, let's examine some of the major changes:
+Laravel 5.0 introduces a fresh application structure to the default Laravel project. This new structure serves as a better foundation for building robust application in Laravel, as well as embraces new auto-loading standards (PSR-4) throughout the application. First, let's examine some of the major changes:
 
 ### New Folder Structure
 
@@ -163,16 +60,15 @@ User registration, authentication, and password reset controllers are now includ
 
 You may now define events as objects instead of simply using strings. For example, check out the following event:
 
-	<?php
+	class PodcastWasPurchased {
 
-	class PodcastWasPurchased
-	{
 		public $podcast;
 
 		public function __construct(Podcast $podcast)
 		{
 			$this->podcast = $podcast;
 		}
+
 	}
 
 The event may be dispatched like normal:
@@ -181,14 +77,13 @@ The event may be dispatched like normal:
 
 Of course, your event handler will receive the event object instead of a list of data:
 
-	<?php
+	class ReportPodcastPurchase {
 
-	class ReportPodcastPurchase
-	{
 		public function handle(PodcastWasPurchased $event)
 		{
 			//
 		}
+
 	}
 
 For more information on working with events, check out the [full documentation](/docs/{{version}}/events).
@@ -197,10 +92,8 @@ For more information on working with events, check out the [full documentation](
 
 In addition to the queue job format supported in Laravel 4, Laravel 5 allows you to represent your queued jobs as simple command objects. These commands live in the `app/Commands` directory. Here's a sample command:
 
-	<?php
+	class PurchasePodcast extends Command implements SelfHandling, ShouldBeQueued {
 
-	class PurchasePodcast extends Command implements SelfHandling, ShouldBeQueued
-	{
 		use SerializesModels;
 
 		protected $user, $podcast;
@@ -227,6 +120,7 @@ In addition to the queue job format supported in Laravel 4, Laravel 5 allows you
 
 			event(new PodcastWasPurchased($this->user, $this->podcast));
 		}
+
 	}
 
 The base Laravel controller utilizes the new `DispatchesCommands` trait, allowing you to easily dispatch your commands for execution:
@@ -247,7 +141,7 @@ It looks like this:
 
 	$schedule->command('artisan:command')->dailyAt('15:00');
 
-Of course, check out the [full documentation](/docs/{{version}}/scheduling) to learn all about the scheduler!
+Of course, check out the [full documentation](/docs/{{version}}/artisan#scheduling-artisan-commands) to learn all about the scheduler!
 
 ### Tinker / Psysh
 
@@ -257,7 +151,7 @@ The `php artisan tinker` command now utilizes [Psysh](https://github.com/bobthec
 
 ### DotEnv
 
-Instead of a variety of confusing, nested environment configuration directories, Laravel 5 now utilizes [DotEnv](https://github.com/vlucas/phpdotenv) by Vance Lucas. This library provides a super simple way to manage your environment configuration, and makes environment detection in Laravel 5 a breeze. For more details, check out the full [configuration documentation](/docs/{{version}}/installation#environment-configuration).
+Instead of a variety of confusing, nested environment configuration directories, Laravel 5 now utilizes [DotEnv](https://github.com/vlucas/phpdotenv) by Vance Lucas. This library provides a super simple way to manage your environment configuration, and makes environment detection in Laravel 5 a breeze. For more details, check out the full [configuration documentation](/docs/{{version}}/configuration#environment-configuration).
 
 ### Laravel Elixir
 
@@ -295,8 +189,8 @@ Laravel 5.0 introduces **form requests**, which extend the `Illuminate\Foundatio
 
 	<?php namespace App\Http\Requests;
 
-	class RegisterRequest extends FormRequest
-	{
+	class RegisterRequest extends FormRequest {
+
 		public function rules()
 		{
 			return [
@@ -309,6 +203,7 @@ Laravel 5.0 introduces **form requests**, which extend the `Illuminate\Foundatio
 		{
 			return true;
 		}
+
 	}
 
 Once the class has been defined, we can type-hint it on our controller action:

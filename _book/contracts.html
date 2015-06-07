@@ -1,0 +1,1329 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Contracts | Laravel Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./facades.html" />
+    
+    
+    <link rel="prev" href="./container.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4.5" data-basepath="." data-revision="Sun Jun 07 2015 09:41:41 GMT+0530 (IST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Prologue</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="releases.html">
+            
+                
+                    <a href="./releases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Release Notes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="upgrade.html">
+            
+                
+                    <a href="./upgrade.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Upgrade Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="contributions.html">
+            
+                
+                    <a href="./contributions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Contribution Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Setup</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="homestead.html">
+            
+                
+                    <a href="./homestead.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Homestead
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> The Basics</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="routing.html">
+            
+                
+                    <a href="./routing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Routing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="middleware.html">
+            
+                
+                    <a href="./middleware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Middleware
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="controllers.html">
+            
+                
+                    <a href="./controllers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Controllers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="requests.html">
+            
+                
+                    <a href="./requests.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="responses.html">
+            
+                
+                    <a href="./responses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Responses
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="views.html">
+            
+                
+                    <a href="./views.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Views
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="templates.html">
+            
+                
+                    <a href="./templates.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Blade Templates
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Architecture Foundations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lifecycle.html">
+            
+                
+                    <a href="./lifecycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request Lifecycle
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Application Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="providers.html">
+            
+                
+                    <a href="./providers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Service Providers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="container.html">
+            
+                
+                    <a href="./container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Service Container
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.5" data-path="contracts.html">
+            
+                
+                    <a href="./contracts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Contracts
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="facades.html">
+            
+                
+                    <a href="./facades.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Facades
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Services</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="authentication.html">
+            
+                
+                    <a href="./authentication.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Authentication
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="billing.html">
+            
+                
+                    <a href="./billing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Billing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cache.html">
+            
+                
+                    <a href="./cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Cache
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="collections.html">
+            
+                
+                    <a href="./collections.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Collections
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="bus.html">
+            
+                
+                    <a href="./bus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Command Bus
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="extending.html">
+            
+                
+                    <a href="./extending.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Core Extension
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="elixir.html">
+            
+                
+                    <a href="./elixir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="encryption.html">
+            
+                
+                    <a href="./encryption.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Encryption
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Errors &amp; Logging
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="filesystem.html">
+            
+                
+                    <a href="./filesystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Filesystem / Cloud Storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="hashing.html">
+            
+                
+                    <a href="./hashing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        Hashing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="helpers.html">
+            
+                
+                    <a href="./helpers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        Helpers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="localization.html">
+            
+                
+                    <a href="./localization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.15.</b>
+                        
+                        Localization
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="mail.html">
+            
+                
+                    <a href="./mail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.16.</b>
+                        
+                        Mail
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="packages.html">
+            
+                
+                    <a href="./packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.17.</b>
+                        
+                        Package Development
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="pagination.html">
+            
+                
+                    <a href="./pagination.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.18.</b>
+                        
+                        Pagination
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="queues.html">
+            
+                
+                    <a href="./queues.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.19.</b>
+                        
+                        Queues
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="redis.html">
+            
+                
+                    <a href="./redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.20.</b>
+                        
+                        Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="session.html">
+            
+                
+                    <a href="./session.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.21.</b>
+                        
+                        Session
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="envoy.html">
+            
+                
+                    <a href="./envoy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.22.</b>
+                        
+                        SSH Tasks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="scheduling.html">
+            
+            <span><b>5.23.</b> Task Scheduling</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.24.</b>
+                        
+                        Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="validation.html">
+            
+                
+                    <a href="./validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.25.</b>
+                        
+                        Validation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> Database</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="database.html">
+            
+                
+                    <a href="./database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="queries.html">
+            
+                
+                    <a href="./queries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Query Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="schema.html">
+            
+                
+                    <a href="./schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Schema Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="migrations.html">
+            
+                
+                    <a href="./migrations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Migrations &amp; Seeding
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> Eloquent ORM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="eloquent.html">
+            
+                
+                    <a href="./eloquent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> Artisan</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Development
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Laravel Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="contracts">Contracts</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#why-contracts">Why Contracts?</a></li>
+<li><a href="#contract-reference">Contract Reference</a></li>
+<li><a href="#how-to-use-contracts">How To Use Contracts</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Laravel&apos;s Contracts are a set of interfaces that define the core services provided by the framework. For example, a <code>Queue</code> contract defines the methods needed for queueing jobs, while the <code>Mailer</code> contract defines the methods needed for sending e-mail.</p>
+<p>Each contract has a corresponding implementation provided by the framework. For example, Laravel provides a <code>Queue</code> implementation with a variety of drivers, and a <code>Mailer</code> implementation that is powered by <a href="http://swiftmailer.org/" target="_blank">SwiftMailer</a>.</p>
+<p>All of the Laravel contracts live in <a href="https://github.com/illuminate/contracts" target="_blank">their own GitHub repository</a>. This provides a quick reference point for all available contracts, as well as a single, decoupled package that may be utilized by other package developers.</p>
+<p><a name="why-contracts"></a></p>
+<h2 id="why-contracts">Why Contracts?</h2>
+<p>You may have several questions regarding contracts. Why use interfaces at all? Isn&apos;t using interfaces more complicated?</p>
+<p>Let&apos;s distill the reasons for using interfaces to the following headings: loose coupling and simplicity.</p>
+<h3 id="loose-coupling">Loose Coupling</h3>
+<p>First, let&apos;s review some code that is tightly coupled to a cache implementation. Consider the following:</p>
+<pre><code>&lt;?php namespace App\Orders;
+
+class Repository {
+
+    /**
+     * The cache.
+     */
+    protected $cache;
+
+    /**
+     * Create a new repository instance.
+     *
+     * @param  \SomePackage\Cache\Memcached  $cache
+     * @return void
+     */
+    public function __construct(\SomePackage\Cache\Memcached $cache)
+    {
+        $this-&gt;cache = $cache;
+    }
+
+    /**
+     * Retrieve an Order by ID.
+     *
+     * @param  int  $id
+     * @return Order
+     */
+    public function find($id)
+    {
+        if ($this-&gt;cache-&gt;has($id))
+        {
+            //
+        }
+    }
+
+}
+</code></pre><p>In this class, the code is tightly coupled to a given cache implementation. It is tightly coupled because we are depending on a concrete Cache class from a package vendor. If the API of that package changes our code must change as well.</p>
+<p>Likewise, if we want to replace our underlying cache technology (Memcached) with another technology (Redis), we again will have to modify our repository. Our repository should not have so much knowledge regarding who is providing them data or how they are providing it.</p>
+<p><strong>Instead of this approach, we can improve our code by depending on a simple, vendor agnostic interface:</strong></p>
+<pre><code>&lt;?php namespace App\Orders;
+
+use Illuminate\Contracts\Cache\Repository as Cache;
+
+class Repository {
+
+    /**
+     * Create a new repository instance.
+     *
+     * @param  Cache  $cache
+     * @return void
+     */
+    public function __construct(Cache $cache)
+    {
+        $this-&gt;cache = $cache;
+    }
+
+}
+</code></pre><p>Now the code is not coupled to any specific vendor, or even Laravel. Since the contracts package contains no implementation and no dependencies, you may easily write an alternative implementation of any given contract, allowing you to replace your cache implementation without modifying any of your cache consuming code.</p>
+<h3 id="simplicity">Simplicity</h3>
+<p>When all of Laravel&apos;s services are neatly defined within simple interfaces, it is very easy to determine the functionality offered by a given service. <strong>The contracts serve as succinct documentation to the framework&apos;s features.</strong></p>
+<p>In addition, when you depend on simple interfaces, your code is easier to understand and maintain. Rather than tracking down which methods are available to you within a large, complicated class, you can refer to a simple, clean interface.</p>
+<p><a name="contract-reference"></a></p>
+<h2 id="contract-reference">Contract Reference</h2>
+<p>This is a reference to most Laravel Contracts, as well as their Laravel &quot;facade&quot; counterparts:</p>
+<table>
+<thead>
+<tr>
+<th>Contract</th>
+<th>Laravel 4.x Facade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Auth/Guard.php" target="_blank">Illuminate\Contracts\Auth\Guard</a></td>
+<td>Auth</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Auth/PasswordBroker.php" target="_blank">Illuminate\Contracts\Auth\PasswordBroker</a></td>
+<td>Password</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Bus/Dispatcher.php" target="_blank">Illuminate\Contracts\Bus\Dispatcher</a></td>
+<td>Bus</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Cache/Repository.php" target="_blank">Illuminate\Contracts\Cache\Repository</a></td>
+<td>Cache</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Cache/Factory.php" target="_blank">Illuminate\Contracts\Cache\Factory</a></td>
+<td>Cache::driver()</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Config/Repository.php" target="_blank">Illuminate\Contracts\Config\Repository</a></td>
+<td>Config</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Container/Container.php" target="_blank">Illuminate\Contracts\Container\Container</a></td>
+<td>App</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Cookie/Factory.php" target="_blank">Illuminate\Contracts\Cookie\Factory</a></td>
+<td>Cookie</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Cookie/QueueingFactory.php" target="_blank">Illuminate\Contracts\Cookie\QueueingFactory</a></td>
+<td>Cookie::queue()</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Encryption/Encrypter.php" target="_blank">Illuminate\Contracts\Encryption\Encrypter</a></td>
+<td>Crypt</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Events/Dispatcher.php" target="_blank">Illuminate\Contracts\Events\Dispatcher</a></td>
+<td>Event</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Filesystem/Cloud.php" target="_blank">Illuminate\Contracts\Filesystem\Cloud</a></td>
+<td>&#xA0;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Filesystem/Factory.php" target="_blank">Illuminate\Contracts\Filesystem\Factory</a></td>
+<td>File</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Filesystem/Filesystem.php" target="_blank">Illuminate\Contracts\Filesystem\Filesystem</a></td>
+<td>File</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Foundation/Application.php" target="_blank">Illuminate\Contracts\Foundation\Application</a></td>
+<td>App</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Hashing/Hasher.php" target="_blank">Illuminate\Contracts\Hashing\Hasher</a></td>
+<td>Hash</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Logging/Log.php" target="_blank">Illuminate\Contracts\Logging\Log</a></td>
+<td>Log</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Mail/MailQueue.php" target="_blank">Illuminate\Contracts\Mail\MailQueue</a></td>
+<td>Mail::queue()</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Mail/Mailer.php" target="_blank">Illuminate\Contracts\Mail\Mailer</a></td>
+<td>Mail</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Queue/Factory.php" target="_blank">Illuminate\Contracts\Queue\Factory</a></td>
+<td>Queue::driver()</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Queue/Queue.php" target="_blank">Illuminate\Contracts\Queue\Queue</a></td>
+<td>Queue</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Redis/Database.php" target="_blank">Illuminate\Contracts\Redis\Database</a></td>
+<td>Redis</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Routing/Registrar.php" target="_blank">Illuminate\Contracts\Routing\Registrar</a></td>
+<td>Route</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Routing/ResponseFactory.php" target="_blank">Illuminate\Contracts\Routing\ResponseFactory</a></td>
+<td>Response</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Routing/UrlGenerator.php" target="_blank">Illuminate\Contracts\Routing\UrlGenerator</a></td>
+<td>URL</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Support/Arrayable.php" target="_blank">Illuminate\Contracts\Support\Arrayable</a></td>
+<td>&#xA0;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Support/Jsonable.php" target="_blank">Illuminate\Contracts\Support\Jsonable</a></td>
+<td>&#xA0;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Support/Renderable.php" target="_blank">Illuminate\Contracts\Support\Renderable</a></td>
+<td>&#xA0;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Validation/Factory.php" target="_blank">Illuminate\Contracts\Validation\Factory</a></td>
+<td>Validator::make()</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/Validation/Validator.php" target="_blank">Illuminate\Contracts\Validation\Validator</a></td>
+<td>&#xA0;</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/View/Factory.php" target="_blank">Illuminate\Contracts\View\Factory</a></td>
+<td>View::make()</td>
+</tr>
+<tr>
+<td><a href="https://github.com/illuminate/contracts/blob/master/View/View.php" target="_blank">Illuminate\Contracts\View\View</a></td>
+<td>&#xA0;</td>
+</tr>
+</tbody>
+</table>
+<p><a name="how-to-use-contracts"></a></p>
+<h2 id="how-to-use-contracts">How To Use Contracts</h2>
+<p>So, how do you get an implementation of a contract? It&apos;s actually quite simple. Many types of classes in Laravel are resolved through the <a href="docs/container">service container</a>, including controllers, event listeners, filters, queue jobs, and even route Closures. So, to get an implementation of a contract, you can just &quot;type-hint&quot; the interface in the constructor of the class being resolved. For example, take a look at this event handler:</p>
+<pre><code>&lt;?php namespace App\Handlers\Events;
+
+use App\User;
+use App\Events\NewUserRegistered;
+use Illuminate\Contracts\Redis\Database;
+
+class CacheUserInformation {
+
+    /**
+     * The Redis database implementation.
+     */
+    protected $redis;
+
+    /**
+     * Create a new event handler instance.
+     *
+     * @param  Database  $redis
+     * @return void
+     */
+    public function __construct(Database $redis)
+    {
+        $this-&gt;redis = $redis;
+    }
+
+    /**
+     * Handle the event.
+     *
+     * @param  NewUserRegistered  $event
+     * @return void
+     */
+    public function handle(NewUserRegistered $event)
+    {
+        //
+    }
+
+}
+</code></pre><p>When the event listener is resolved, the service container will read the type-hints on the constructor of the class, and inject the appropriate value. To learn more about registering things in the service container, check out <a href="docs/container">the documentation</a>.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./container.html" class="navigation navigation-prev " aria-label="Previous page: Service Container"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./facades.html" class="navigation navigation-next " aria-label="Next page: Facades"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

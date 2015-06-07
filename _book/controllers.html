@@ -1,0 +1,1358 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Controllers | Laravel Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./requests.html" />
+    
+    
+    <link rel="prev" href="./middleware.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.3" data-basepath="." data-revision="Sun Jun 07 2015 09:41:41 GMT+0530 (IST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Prologue</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="releases.html">
+            
+                
+                    <a href="./releases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Release Notes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="upgrade.html">
+            
+                
+                    <a href="./upgrade.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Upgrade Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="contributions.html">
+            
+                
+                    <a href="./contributions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Contribution Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Setup</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="homestead.html">
+            
+                
+                    <a href="./homestead.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Homestead
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> The Basics</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="routing.html">
+            
+                
+                    <a href="./routing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Routing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="middleware.html">
+            
+                
+                    <a href="./middleware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Middleware
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="controllers.html">
+            
+                
+                    <a href="./controllers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Controllers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="requests.html">
+            
+                
+                    <a href="./requests.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="responses.html">
+            
+                
+                    <a href="./responses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Responses
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="views.html">
+            
+                
+                    <a href="./views.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Views
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="templates.html">
+            
+                
+                    <a href="./templates.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Blade Templates
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Architecture Foundations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lifecycle.html">
+            
+                
+                    <a href="./lifecycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request Lifecycle
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Application Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="providers.html">
+            
+                
+                    <a href="./providers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Service Providers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="container.html">
+            
+                
+                    <a href="./container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Service Container
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="contracts.html">
+            
+                
+                    <a href="./contracts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Contracts
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="facades.html">
+            
+                
+                    <a href="./facades.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Facades
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Services</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="authentication.html">
+            
+                
+                    <a href="./authentication.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Authentication
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="billing.html">
+            
+                
+                    <a href="./billing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Billing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cache.html">
+            
+                
+                    <a href="./cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Cache
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="collections.html">
+            
+                
+                    <a href="./collections.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Collections
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="bus.html">
+            
+                
+                    <a href="./bus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Command Bus
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="extending.html">
+            
+                
+                    <a href="./extending.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Core Extension
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="elixir.html">
+            
+                
+                    <a href="./elixir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="encryption.html">
+            
+                
+                    <a href="./encryption.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Encryption
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Errors &amp; Logging
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="filesystem.html">
+            
+                
+                    <a href="./filesystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Filesystem / Cloud Storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="hashing.html">
+            
+                
+                    <a href="./hashing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        Hashing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="helpers.html">
+            
+                
+                    <a href="./helpers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        Helpers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="localization.html">
+            
+                
+                    <a href="./localization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.15.</b>
+                        
+                        Localization
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="mail.html">
+            
+                
+                    <a href="./mail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.16.</b>
+                        
+                        Mail
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="packages.html">
+            
+                
+                    <a href="./packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.17.</b>
+                        
+                        Package Development
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="pagination.html">
+            
+                
+                    <a href="./pagination.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.18.</b>
+                        
+                        Pagination
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="queues.html">
+            
+                
+                    <a href="./queues.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.19.</b>
+                        
+                        Queues
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="redis.html">
+            
+                
+                    <a href="./redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.20.</b>
+                        
+                        Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="session.html">
+            
+                
+                    <a href="./session.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.21.</b>
+                        
+                        Session
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="envoy.html">
+            
+                
+                    <a href="./envoy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.22.</b>
+                        
+                        SSH Tasks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="scheduling.html">
+            
+            <span><b>5.23.</b> Task Scheduling</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.24.</b>
+                        
+                        Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="validation.html">
+            
+                
+                    <a href="./validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.25.</b>
+                        
+                        Validation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> Database</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="database.html">
+            
+                
+                    <a href="./database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="queries.html">
+            
+                
+                    <a href="./queries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Query Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="schema.html">
+            
+                
+                    <a href="./schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Schema Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="migrations.html">
+            
+                
+                    <a href="./migrations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Migrations &amp; Seeding
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> Eloquent ORM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="eloquent.html">
+            
+                
+                    <a href="./eloquent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> Artisan</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Development
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Laravel Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="http-controllers">HTTP Controllers</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#basic-controllers">Basic Controllers</a></li>
+<li><a href="#controller-middleware">Controller Middleware</a></li>
+<li><a href="#implicit-controllers">Implicit Controllers</a></li>
+<li><a href="#restful-resource-controllers">RESTful Resource Controllers</a></li>
+<li><a href="#dependency-injection-and-controllers">Dependency Injection &amp; Controllers</a></li>
+<li><a href="#route-caching">Route Caching</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Instead of defining all of your request handling logic in a single <code>routes.php</code> file, you may wish to organize this behavior using Controller classes. Controllers can group related HTTP request handling logic into a class. Controllers are typically stored in the <code>app/Http/Controllers</code> directory.</p>
+<p><a name="basic-controllers"></a></p>
+<h2 id="basic-controllers">Basic Controllers</h2>
+<p>Here is an example of a basic controller class:</p>
+<pre><code>&lt;?php namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+
+class UserController extends Controller {
+
+    /**
+     * Show the profile for the given user.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function showProfile($id)
+    {
+        return view(&apos;user.profile&apos;, [&apos;user&apos; =&gt; User::findOrFail($id)]);
+    }
+
+}
+</code></pre><p>We can route to the controller action like so:</p>
+<pre><code>Route::get(&apos;user/{id}&apos;, &apos;UserController@showProfile&apos;);
+</code></pre><blockquote>
+<p><strong>Note:</strong> All controllers should extend the base controller class.</p>
+</blockquote>
+<h4 id="controllers-namespaces">Controllers &amp; Namespaces</h4>
+<p>It is very important to note that we did not need to specify the full controller namespace, only the portion of the class name that comes after the <code>App\Http\Controllers</code> namespace &quot;root&quot;. By default, the <code>RouteServiceProvider</code> will load the <code>routes.php</code> file within a route group containing the root controller namespace.</p>
+<p>If you choose to nest or organize your controllers using PHP namespaces deeper into the <code>App\Http\Controllers</code> directory, simply use the specific class name relative to the <code>App\Http\Controllers</code> root namespace. So, if your full controller class is <code>App\Http\Controllers\Photos\AdminController</code>, you would register a route like so:</p>
+<pre><code>Route::get(&apos;foo&apos;, &apos;Photos\AdminController@method&apos;);
+</code></pre><h4 id="naming-controller-routes">Naming Controller Routes</h4>
+<p>Like Closure routes, you may specify names on controller routes:</p>
+<pre><code>Route::get(&apos;foo&apos;, [&apos;uses&apos; =&gt; &apos;FooController@method&apos;, &apos;as&apos; =&gt; &apos;name&apos;]);
+</code></pre><h4 id="urls-to-controller-actions">URLs To Controller Actions</h4>
+<p>To generate a URL to a controller action, use the <code>action</code> helper method:</p>
+<pre><code>$url = action(&apos;App\Http\Controllers\FooController@method&apos;);
+</code></pre><p>If you wish to generate a URL to a controller action while using only the portion of the class name relative to your controller namespace, register the root controller namespace with the URL generator:</p>
+<pre><code>URL::setRootControllerNamespace(&apos;App\Http\Controllers&apos;);
+
+$url = action(&apos;FooController@method&apos;);
+</code></pre><p>You may access the name of the controller action being run using the <code>currentRouteAction</code> method:</p>
+<pre><code>$action = Route::currentRouteAction();
+</code></pre><p><a name="controller-middleware"></a></p>
+<h2 id="controller-middleware">Controller Middleware</h2>
+<p><a href="docs/middleware">Middleware</a> may be specified on controller routes like so:</p>
+<pre><code>Route::get(&apos;profile&apos;, [
+    &apos;middleware&apos; =&gt; &apos;auth&apos;,
+    &apos;uses&apos; =&gt; &apos;UserController@showProfile&apos;
+]);
+</code></pre><p>Additionally, you may specify middleware within your controller&apos;s constructor:</p>
+<pre><code>class UserController extends Controller {
+
+    /**
+     * Instantiate a new UserController instance.
+     */
+    public function __construct()
+    {
+        $this-&gt;middleware(&apos;auth&apos;);
+
+        $this-&gt;middleware(&apos;log&apos;, [&apos;only&apos; =&gt; [&apos;fooAction&apos;, &apos;barAction&apos;]]);
+
+        $this-&gt;middleware(&apos;subscribed&apos;, [&apos;except&apos; =&gt; [&apos;fooAction&apos;, &apos;barAction&apos;]]);
+    }
+
+}
+</code></pre><p><a name="implicit-controllers"></a></p>
+<h2 id="implicit-controllers">Implicit Controllers</h2>
+<p>Laravel allows you to easily define a single route to handle every action in a controller. First, define the route using the <code>Route::controller</code> method:</p>
+<pre><code>Route::controller(&apos;users&apos;, &apos;UserController&apos;);
+</code></pre><p>The <code>controller</code> method accepts two arguments. The first is the base URI the controller handles, while the second is the class name of the controller. Next, just add methods to your controller, prefixed with the HTTP verb they respond to:</p>
+<pre><code>class UserController extends Controller {
+
+    public function getIndex()
+    {
+        //
+    }
+
+    public function postProfile()
+    {
+        //
+    }
+
+    public function anyLogin()
+    {
+        //
+    }
+
+}
+</code></pre><p>The <code>index</code> methods will respond to the root URI handled by the controller, which, in this case, is <code>users</code>.</p>
+<p>If your controller action contains multiple words, you may access the action using &quot;dash&quot; syntax in the URI. For example, the following controller action on our <code>UserController</code> would respond to the <code>users/admin-profile</code> URI:</p>
+<pre><code>public function getAdminProfile() {}
+</code></pre><h4 id="assigning-route-names">Assigning Route Names</h4>
+<p>If you would like to &quot;name&quot; some of the routes on the controller, you may pass a third argument to the <code>controller</code> method:</p>
+<pre><code>Route::controller(&apos;users&apos;, &apos;UserController&apos;, [
+    &apos;anyLogin&apos; =&gt; &apos;user.login&apos;,
+]);
+</code></pre><p><a name="restful-resource-controllers"></a></p>
+<h2 id="restful-resource-controllers">RESTful Resource Controllers</h2>
+<p>Resource controllers make it painless to build RESTful controllers around resources. For example, you may wish to create a controller that handles HTTP requests regarding &quot;photos&quot; stored by your application. Using the <code>make:controller</code> Artisan command, we can quickly create such a controller:</p>
+<pre><code>php artisan make:controller PhotoController
+</code></pre><p>Next, we register a resourceful route to the controller:</p>
+<pre><code>Route::resource(&apos;photo&apos;, &apos;PhotoController&apos;);
+</code></pre><p>This single route declaration creates multiple routes to handle a variety of RESTful actions on the photo resource. Likewise, the generated controller will already have methods stubbed for each of these actions, including notes informing you which URIs and verbs they handle.</p>
+<h4 id="actions-handled-by-resource-controller">Actions Handled By Resource Controller</h4>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Path</th>
+<th>Action</th>
+<th>Route Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>/photo</td>
+<td>index</td>
+<td>photo.index</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photo/create</td>
+<td>create</td>
+<td>photo.create</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>/photo</td>
+<td>store</td>
+<td>photo.store</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photo/{photo}</td>
+<td>show</td>
+<td>photo.show</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>/photo/{photo}/edit</td>
+<td>edit</td>
+<td>photo.edit</td>
+</tr>
+<tr>
+<td>PUT/PATCH</td>
+<td>/photo/{photo}</td>
+<td>update</td>
+<td>photo.update</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>/photo/{photo}</td>
+<td>destroy</td>
+<td>photo.destroy</td>
+</tr>
+</tbody>
+</table>
+<h4 id="customizing-resource-routes">Customizing Resource Routes</h4>
+<p>Additionally, you may specify only a subset of actions to handle on the route:</p>
+<pre><code>Route::resource(&apos;photo&apos;, &apos;PhotoController&apos;,
+                [&apos;only&apos; =&gt; [&apos;index&apos;, &apos;show&apos;]]);
+
+Route::resource(&apos;photo&apos;, &apos;PhotoController&apos;,
+                [&apos;except&apos; =&gt; [&apos;create&apos;, &apos;store&apos;, &apos;update&apos;, &apos;destroy&apos;]]);
+</code></pre><p>By default, all resource controller actions have a route name; however, you can override these names by passing a <code>names</code> array with your options:</p>
+<pre><code>Route::resource(&apos;photo&apos;, &apos;PhotoController&apos;,
+                [&apos;names&apos; =&gt; [&apos;create&apos; =&gt; &apos;photo.build&apos;]]);
+</code></pre><h4 id="handling-nested-resource-controllers">Handling Nested Resource Controllers</h4>
+<p>To &quot;nest&quot; resource controllers, use &quot;dot&quot; notation in your route declaration:</p>
+<pre><code>Route::resource(&apos;photos.comments&apos;, &apos;PhotoCommentController&apos;);
+</code></pre><p>This route will register a &quot;nested&quot; resource that may be accessed with URLs like the following: <code>photos/{photos}/comments/{comments}</code>.</p>
+<pre><code>class PhotoCommentController extends Controller {
+
+    /**
+     * Show the specified photo comment.
+     *
+     * @param  int  $photoId
+     * @param  int  $commentId
+     * @return Response
+     */
+    public function show($photoId, $commentId)
+    {
+        //
+    }
+
+}
+</code></pre><h4 id="adding-additional-routes-to-resource-controllers">Adding Additional Routes To Resource Controllers</h4>
+<p>If it becomes necessary to add additional routes to a resource controller beyond the default resource routes, you should define those routes before your call to <code>Route::resource</code>:</p>
+<pre><code>Route::get(&apos;photos/popular&apos;, &apos;PhotoController@method&apos;);
+
+Route::resource(&apos;photos&apos;, &apos;PhotoController&apos;);
+</code></pre><p><a name="dependency-injection-and-controllers"></a></p>
+<h2 id="dependency-injection-controllers">Dependency Injection &amp; Controllers</h2>
+<h4 id="constructor-injection">Constructor Injection</h4>
+<p>The Laravel <a href="docs/container">service container</a> is used to resolve all Laravel controllers. As a result, you are able to type-hint any dependencies your controller may need in its constructor:</p>
+<pre><code>&lt;?php namespace App\Http\Controllers;
+
+use Illuminate\Routing\Controller;
+use App\Repositories\UserRepository;
+
+class UserController extends Controller {
+
+    /**
+     * The user repository instance.
+     */
+    protected $users;
+
+    /**
+     * Create a new controller instance.
+     *
+     * @param  UserRepository  $users
+     * @return void
+     */
+    public function __construct(UserRepository $users)
+    {
+        $this-&gt;users = $users;
+    }
+
+}
+</code></pre><p>Of course, you may also type-hint any <a href="docs/contracts">Laravel contract</a>. If the container can resolve it, you can type-hint it.</p>
+<h4 id="method-injection">Method Injection</h4>
+<p>In addition to constructor injection, you may also type-hint dependencies on your controller&apos;s methods. For example, let&apos;s type-hint the <code>Request</code> instance on one of our methods:</p>
+<pre><code>&lt;?php namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
+class UserController extends Controller {
+
+    /**
+     * Store a new user.
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function store(Request $request)
+    {
+        $name = $request-&gt;input(&apos;name&apos;);
+
+        //
+    }
+
+}
+</code></pre><p>If your controller method is also expecting input from a route parameter, simply list your route arguments after your other dependencies:</p>
+<pre><code>&lt;?php namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
+class UserController extends Controller {
+
+    /**
+     * Update the specified user.
+     *
+     * @param  Request  $request
+     * @param  int  $id
+     * @return Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+}
+</code></pre><blockquote>
+<p><strong>Note:</strong> Method injection is fully compatible with <a href="docs/routing#route-model-binding">model binding</a>. The container will intelligently determine which arguments are model bound and which arguments should be injected.</p>
+</blockquote>
+<p><a name="route-caching"></a></p>
+<h2 id="route-caching">Route Caching</h2>
+<p>If your application is exclusively using controller routes, you may take advantage of Laravel&apos;s route cache. Using the route cache will drastically decrease the amount of time it take to register all of your application&apos;s routes. In some cases, your route registration may even be up to 100x faster! To generate a route cache, just execute the <code>route:cache</code> Artisan command:</p>
+<pre><code>php artisan route:cache
+</code></pre><p>That&apos;s all there is to it! Your cached routes file will now be used instead of your <code>app/Http/routes.php</code> file. Remember, if you add any new routes you will need to generate a fresh route cache. Because of this, you may wish to only run the <code>route:cache</code> command during your project&apos;s deployment.</p>
+<p>To remove the cached routes file without generating a new cache, use the <code>route:clear</code> command:</p>
+<pre><code>php artisan route:clear
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./middleware.html" class="navigation navigation-prev " aria-label="Previous page: Middleware"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./requests.html" class="navigation navigation-next " aria-label="Next page: Requests"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

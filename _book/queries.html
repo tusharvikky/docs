@@ -1,0 +1,1310 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Query Builder | Laravel Documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.1.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./schema.html" />
+    
+    
+    <link rel="prev" href="./database.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="6.2" data-basepath="." data-revision="Sun Jun 07 2015 09:41:41 GMT+0530 (IST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Prologue</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="releases.html">
+            
+                
+                    <a href="./releases.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Release Notes
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="upgrade.html">
+            
+                
+                    <a href="./upgrade.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Upgrade Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="contributions.html">
+            
+                
+                    <a href="./contributions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Contribution Guide
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Setup</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installation
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="homestead.html">
+            
+                
+                    <a href="./homestead.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Homestead
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="configuration.html">
+            
+                
+                    <a href="./configuration.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Configuration
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> The Basics</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="routing.html">
+            
+                
+                    <a href="./routing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Routing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="middleware.html">
+            
+                
+                    <a href="./middleware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Middleware
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="controllers.html">
+            
+                
+                    <a href="./controllers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Controllers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="requests.html">
+            
+                
+                    <a href="./requests.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Requests
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="responses.html">
+            
+                
+                    <a href="./responses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Responses
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="views.html">
+            
+                
+                    <a href="./views.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        Views
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="templates.html">
+            
+                
+                    <a href="./templates.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Blade Templates
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Architecture Foundations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lifecycle.html">
+            
+                
+                    <a href="./lifecycle.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Request Lifecycle
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Application Structure
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="providers.html">
+            
+                
+                    <a href="./providers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Service Providers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="container.html">
+            
+                
+                    <a href="./container.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Service Container
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="contracts.html">
+            
+                
+                    <a href="./contracts.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Contracts
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="facades.html">
+            
+                
+                    <a href="./facades.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        Facades
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> Services</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="authentication.html">
+            
+                
+                    <a href="./authentication.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Authentication
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="billing.html">
+            
+                
+                    <a href="./billing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Billing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="cache.html">
+            
+                
+                    <a href="./cache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Cache
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="collections.html">
+            
+                
+                    <a href="./collections.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Collections
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="bus.html">
+            
+                
+                    <a href="./bus.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Command Bus
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="extending.html">
+            
+                
+                    <a href="./extending.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Core Extension
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="elixir.html">
+            
+                
+                    <a href="./elixir.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Elixir
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="encryption.html">
+            
+                
+                    <a href="./encryption.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        Encryption
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        Errors &amp; Logging
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        Events
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="filesystem.html">
+            
+                
+                    <a href="./filesystem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        Filesystem / Cloud Storage
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="hashing.html">
+            
+                
+                    <a href="./hashing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        Hashing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="helpers.html">
+            
+                
+                    <a href="./helpers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        Helpers
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.15" data-path="localization.html">
+            
+                
+                    <a href="./localization.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.15.</b>
+                        
+                        Localization
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.16" data-path="mail.html">
+            
+                
+                    <a href="./mail.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.16.</b>
+                        
+                        Mail
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.17" data-path="packages.html">
+            
+                
+                    <a href="./packages.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.17.</b>
+                        
+                        Package Development
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.18" data-path="pagination.html">
+            
+                
+                    <a href="./pagination.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.18.</b>
+                        
+                        Pagination
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.19" data-path="queues.html">
+            
+                
+                    <a href="./queues.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.19.</b>
+                        
+                        Queues
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.20" data-path="redis.html">
+            
+                
+                    <a href="./redis.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.20.</b>
+                        
+                        Redis
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.21" data-path="session.html">
+            
+                
+                    <a href="./session.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.21.</b>
+                        
+                        Session
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.22" data-path="envoy.html">
+            
+                
+                    <a href="./envoy.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.22.</b>
+                        
+                        SSH Tasks
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.23" data-path="scheduling.html">
+            
+            <span><b>5.23.</b> Task Scheduling</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.24" data-path="testing.html">
+            
+                
+                    <a href="./testing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.24.</b>
+                        
+                        Testing
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.25" data-path="validation.html">
+            
+                
+                    <a href="./validation.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.25.</b>
+                        
+                        Validation
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> Database</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="database.html">
+            
+                
+                    <a href="./database.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2" data-path="queries.html">
+            
+                
+                    <a href="./queries.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Query Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="schema.html">
+            
+                
+                    <a href="./schema.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Schema Builder
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="migrations.html">
+            
+                
+                    <a href="./migrations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Migrations &amp; Seeding
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> Eloquent ORM</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="eloquent.html">
+            
+                
+                    <a href="./eloquent.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Getting Started
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" >
+            
+            <span><b>8.</b> Artisan</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="artisan.html">
+            
+                
+                    <a href="./artisan.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Artisan Console
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="commands.html">
+            
+                
+                    <a href="./commands.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Development
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Laravel Documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="query-builder">Query Builder</h1>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#selects">Selects</a></li>
+<li><a href="#joins">Joins</a></li>
+<li><a href="#advanced-wheres">Advanced Wheres</a></li>
+<li><a href="#aggregates">Aggregates</a></li>
+<li><a href="#raw-expressions">Raw Expressions</a></li>
+<li><a href="#inserts">Inserts</a></li>
+<li><a href="#updates">Updates</a></li>
+<li><a href="#deletes">Deletes</a></li>
+<li><a href="#unions">Unions</a></li>
+<li><a href="#pessimistic-locking">Pessimistic Locking</a></li>
+</ul>
+<p><a name="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>The database query builder provides a convenient, fluent interface to creating and running database queries. It can be used to perform most database operations in your application, and works on all supported database systems.</p>
+<blockquote>
+<p><strong>Note:</strong> The Laravel query builder uses PDO parameter binding throughout to protect your application against SQL injection attacks. There is no need to clean strings being passed as bindings.</p>
+</blockquote>
+<p><a name="selects"></a></p>
+<h2 id="selects">Selects</h2>
+<h4 id="retrieving-all-rows-from-a-table">Retrieving All Rows From A Table</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)-&gt;get();
+
+foreach ($users as $user)
+{
+    var_dump($user-&gt;name);
+}
+</code></pre><h4 id="chunking-results-from-a-table">Chunking Results From A Table</h4>
+<pre><code>DB::table(&apos;users&apos;)-&gt;chunk(100, function($users)
+{
+    foreach ($users as $user)
+    {
+        //
+    }
+});
+</code></pre><p>You may stop further chunks from being processed by returning <code>false</code> from the <code>Closure</code>:</p>
+<pre><code>DB::table(&apos;users&apos;)-&gt;chunk(100, function($users)
+{
+    //
+
+    return false;
+});
+</code></pre><h4 id="retrieving-a-single-row-from-a-table">Retrieving A Single Row From A Table</h4>
+<pre><code>$user = DB::table(&apos;users&apos;)-&gt;where(&apos;name&apos;, &apos;John&apos;)-&gt;first();
+
+var_dump($user-&gt;name);
+</code></pre><h4 id="retrieving-a-single-column-from-a-row">Retrieving A Single Column From A Row</h4>
+<pre><code>$name = DB::table(&apos;users&apos;)-&gt;where(&apos;name&apos;, &apos;John&apos;)-&gt;pluck(&apos;name&apos;);
+</code></pre><h4 id="retrieving-a-list-of-column-values">Retrieving A List Of Column Values</h4>
+<pre><code>$roles = DB::table(&apos;roles&apos;)-&gt;lists(&apos;title&apos;);
+</code></pre><p>This method will return an array of role titles. You may also specify a custom key column for the returned array:</p>
+<pre><code>$roles = DB::table(&apos;roles&apos;)-&gt;lists(&apos;title&apos;, &apos;name&apos;);
+</code></pre><h4 id="specifying-a-select-clause">Specifying A Select Clause</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)-&gt;select(&apos;name&apos;, &apos;email&apos;)-&gt;get();
+
+$users = DB::table(&apos;users&apos;)-&gt;distinct()-&gt;get();
+
+$users = DB::table(&apos;users&apos;)-&gt;select(&apos;name as user_name&apos;)-&gt;get();
+</code></pre><h4 id="adding-a-select-clause-to-an-existing-query">Adding A Select Clause To An Existing Query</h4>
+<pre><code>$query = DB::table(&apos;users&apos;)-&gt;select(&apos;name&apos;);
+
+$users = $query-&gt;addSelect(&apos;age&apos;)-&gt;get();
+</code></pre><h4 id="using-where-operators">Using Where Operators</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)-&gt;where(&apos;votes&apos;, &apos;&gt;&apos;, 100)-&gt;get();
+</code></pre><h4 id="or-statements">Or Statements</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)
+                    -&gt;where(&apos;votes&apos;, &apos;&gt;&apos;, 100)
+                    -&gt;orWhere(&apos;name&apos;, &apos;John&apos;)
+                    -&gt;get();
+</code></pre><h4 id="using-where-between">Using Where Between</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)
+                    -&gt;whereBetween(&apos;votes&apos;, [1, 100])-&gt;get();
+</code></pre><h4 id="using-where-not-between">Using Where Not Between</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)
+                    -&gt;whereNotBetween(&apos;votes&apos;, [1, 100])-&gt;get();
+</code></pre><h4 id="using-where-in-with-an-array">Using Where In With An Array</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)
+                    -&gt;whereIn(&apos;id&apos;, [1, 2, 3])-&gt;get();
+
+$users = DB::table(&apos;users&apos;)
+                    -&gt;whereNotIn(&apos;id&apos;, [1, 2, 3])-&gt;get();
+</code></pre><h4 id="using-where-null-to-find-records-with-unset-values">Using Where Null To Find Records With Unset Values</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)
+                    -&gt;whereNull(&apos;updated_at&apos;)-&gt;get();
+</code></pre><h4 id="dynamic-where-clauses">Dynamic Where Clauses</h4>
+<p>You may even use &quot;dynamic&quot; where statements to fluently build where statements using magic methods:</p>
+<pre><code>$admin = DB::table(&apos;users&apos;)-&gt;whereId(1)-&gt;first();
+
+$john = DB::table(&apos;users&apos;)
+                    -&gt;whereIdAndEmail(2, &apos;john@doe.com&apos;)
+                    -&gt;first();
+
+$jane = DB::table(&apos;users&apos;)
+                    -&gt;whereNameOrAge(&apos;Jane&apos;, 22)
+                    -&gt;first();
+</code></pre><h4 id="order-by-group-by-and-having">Order By, Group By, And Having</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)
+                    -&gt;orderBy(&apos;name&apos;, &apos;desc&apos;)
+                    -&gt;groupBy(&apos;count&apos;)
+                    -&gt;having(&apos;count&apos;, &apos;&gt;&apos;, 100)
+                    -&gt;get();
+</code></pre><h4 id="offset-limit">Offset &amp; Limit</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)-&gt;skip(10)-&gt;take(5)-&gt;get();
+</code></pre><p><a name="joins"></a></p>
+<h2 id="joins">Joins</h2>
+<p>The query builder may also be used to write join statements. Take a look at the following examples:</p>
+<h4 id="basic-join-statement">Basic Join Statement</h4>
+<pre><code>DB::table(&apos;users&apos;)
+            -&gt;join(&apos;contacts&apos;, &apos;users.id&apos;, &apos;=&apos;, &apos;contacts.user_id&apos;)
+            -&gt;join(&apos;orders&apos;, &apos;users.id&apos;, &apos;=&apos;, &apos;orders.user_id&apos;)
+            -&gt;select(&apos;users.id&apos;, &apos;contacts.phone&apos;, &apos;orders.price&apos;)
+            -&gt;get();
+</code></pre><h4 id="left-join-statement">Left Join Statement</h4>
+<pre><code>DB::table(&apos;users&apos;)
+        -&gt;leftJoin(&apos;posts&apos;, &apos;users.id&apos;, &apos;=&apos;, &apos;posts.user_id&apos;)
+        -&gt;get();
+</code></pre><p>You may also specify more advanced join clauses:</p>
+<pre><code>DB::table(&apos;users&apos;)
+        -&gt;join(&apos;contacts&apos;, function($join)
+        {
+            $join-&gt;on(&apos;users.id&apos;, &apos;=&apos;, &apos;contacts.user_id&apos;)-&gt;orOn(...);
+        })
+        -&gt;get();
+</code></pre><p>If you would like to use a &quot;where&quot; style clause on your joins, you may use the <code>where</code> and <code>orWhere</code> methods on a join. Instead of comparing two columns, these methods will compare the column against a value:</p>
+<pre><code>DB::table(&apos;users&apos;)
+        -&gt;join(&apos;contacts&apos;, function($join)
+        {
+            $join-&gt;on(&apos;users.id&apos;, &apos;=&apos;, &apos;contacts.user_id&apos;)
+                 -&gt;where(&apos;contacts.user_id&apos;, &apos;&gt;&apos;, 5);
+        })
+        -&gt;get();
+</code></pre><p><a name="advanced-wheres"></a></p>
+<h2 id="advanced-wheres">Advanced Wheres</h2>
+<h4 id="parameter-grouping">Parameter Grouping</h4>
+<p>Sometimes you may need to create more advanced where clauses such as &quot;where exists&quot; or nested parameter groupings. The Laravel query builder can handle these as well:</p>
+<pre><code>DB::table(&apos;users&apos;)
+            -&gt;where(&apos;name&apos;, &apos;=&apos;, &apos;John&apos;)
+            -&gt;orWhere(function($query)
+            {
+                $query-&gt;where(&apos;votes&apos;, &apos;&gt;&apos;, 100)
+                      -&gt;where(&apos;title&apos;, &apos;&lt;&gt;&apos;, &apos;Admin&apos;);
+            })
+            -&gt;get();
+</code></pre><p>The query above will produce the following SQL:</p>
+<pre><code>select * from users where name = &apos;John&apos; or (votes &gt; 100 and title &lt;&gt; &apos;Admin&apos;)
+</code></pre><h4 id="exists-statements">Exists Statements</h4>
+<pre><code>DB::table(&apos;users&apos;)
+            -&gt;whereExists(function($query)
+            {
+                $query-&gt;select(DB::raw(1))
+                      -&gt;from(&apos;orders&apos;)
+                      -&gt;whereRaw(&apos;orders.user_id = users.id&apos;);
+            })
+            -&gt;get();
+</code></pre><p>The query above will produce the following SQL:</p>
+<pre><code>select * from users
+where exists (
+    select 1 from orders where orders.user_id = users.id
+)
+</code></pre><p><a name="aggregates"></a></p>
+<h2 id="aggregates">Aggregates</h2>
+<p>The query builder also provides a variety of aggregate methods, such as <code>count</code>, <code>max</code>, <code>min</code>, <code>avg</code>, and <code>sum</code>.</p>
+<h4 id="using-aggregate-methods">Using Aggregate Methods</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)-&gt;count();
+
+$price = DB::table(&apos;orders&apos;)-&gt;max(&apos;price&apos;);
+
+$price = DB::table(&apos;orders&apos;)-&gt;min(&apos;price&apos;);
+
+$price = DB::table(&apos;orders&apos;)-&gt;avg(&apos;price&apos;);
+
+$total = DB::table(&apos;users&apos;)-&gt;sum(&apos;votes&apos;);
+</code></pre><p><a name="raw-expressions"></a></p>
+<h2 id="raw-expressions">Raw Expressions</h2>
+<p>Sometimes you may need to use a raw expression in a query. These expressions will be injected into the query as strings, so be careful not to create any SQL injection points! To create a raw expression, you may use the <code>DB::raw</code> method:</p>
+<h4 id="using-a-raw-expression">Using A Raw Expression</h4>
+<pre><code>$users = DB::table(&apos;users&apos;)
+                     -&gt;select(DB::raw(&apos;count(*) as user_count, status&apos;))
+                     -&gt;where(&apos;status&apos;, &apos;&lt;&gt;&apos;, 1)
+                     -&gt;groupBy(&apos;status&apos;)
+                     -&gt;get();
+</code></pre><p><a name="inserts"></a></p>
+<h2 id="inserts">Inserts</h2>
+<h4 id="inserting-records-into-a-table">Inserting Records Into A Table</h4>
+<pre><code>DB::table(&apos;users&apos;)-&gt;insert(
+    [&apos;email&apos; =&gt; &apos;john@example.com&apos;, &apos;votes&apos; =&gt; 0]
+);
+</code></pre><h4 id="inserting-records-into-a-table-with-an-auto-incrementing-id">Inserting Records Into A Table With An Auto-Incrementing ID</h4>
+<p>If the table has an auto-incrementing id, use <code>insertGetId</code> to insert a record and retrieve the id:</p>
+<pre><code>$id = DB::table(&apos;users&apos;)-&gt;insertGetId(
+    [&apos;email&apos; =&gt; &apos;john@example.com&apos;, &apos;votes&apos; =&gt; 0]
+);
+</code></pre><blockquote>
+<p><strong>Note:</strong> When using PostgreSQL the insertGetId method expects the auto-incrementing column to be named &quot;id&quot;.</p>
+</blockquote>
+<h4 id="inserting-multiple-records-into-a-table">Inserting Multiple Records Into A Table</h4>
+<pre><code>DB::table(&apos;users&apos;)-&gt;insert([
+    [&apos;email&apos; =&gt; &apos;taylor@example.com&apos;, &apos;votes&apos; =&gt; 0],
+    [&apos;email&apos; =&gt; &apos;dayle@example.com&apos;, &apos;votes&apos; =&gt; 0]
+]);
+</code></pre><p><a name="updates"></a></p>
+<h2 id="updates">Updates</h2>
+<h4 id="updating-records-in-a-table">Updating Records In A Table</h4>
+<pre><code>DB::table(&apos;users&apos;)
+            -&gt;where(&apos;id&apos;, 1)
+            -&gt;update([&apos;votes&apos; =&gt; 1]);
+</code></pre><h4 id="incrementing-or-decrementing-a-value-of-a-column">Incrementing or decrementing a value of a column</h4>
+<pre><code>DB::table(&apos;users&apos;)-&gt;increment(&apos;votes&apos;);
+
+DB::table(&apos;users&apos;)-&gt;increment(&apos;votes&apos;, 5);
+
+DB::table(&apos;users&apos;)-&gt;decrement(&apos;votes&apos;);
+
+DB::table(&apos;users&apos;)-&gt;decrement(&apos;votes&apos;, 5);
+</code></pre><p>You may also specify additional columns to update:</p>
+<pre><code>DB::table(&apos;users&apos;)-&gt;increment(&apos;votes&apos;, 1, [&apos;name&apos; =&gt; &apos;John&apos;]);
+</code></pre><p><a name="deletes"></a></p>
+<h2 id="deletes">Deletes</h2>
+<h4 id="deleting-records-in-a-table">Deleting Records In A Table</h4>
+<pre><code>DB::table(&apos;users&apos;)-&gt;where(&apos;votes&apos;, &apos;&lt;&apos;, 100)-&gt;delete();
+</code></pre><h4 id="deleting-all-records-from-a-table">Deleting All Records From A Table</h4>
+<pre><code>DB::table(&apos;users&apos;)-&gt;delete();
+</code></pre><h4 id="truncating-a-table">Truncating A Table</h4>
+<pre><code>DB::table(&apos;users&apos;)-&gt;truncate();
+</code></pre><p><a name="unions"></a></p>
+<h2 id="unions">Unions</h2>
+<p>The query builder also provides a quick way to &quot;union&quot; two queries together:</p>
+<pre><code>$first = DB::table(&apos;users&apos;)-&gt;whereNull(&apos;first_name&apos;);
+
+$users = DB::table(&apos;users&apos;)-&gt;whereNull(&apos;last_name&apos;)-&gt;union($first)-&gt;get();
+</code></pre><p>The <code>unionAll</code> method is also available, and has the same method signature as <code>union</code>.</p>
+<p><a name="pessimistic-locking"></a></p>
+<h2 id="pessimistic-locking">Pessimistic Locking</h2>
+<p>The query builder includes a few functions to help you do &quot;pessimistic locking&quot; on your SELECT statements.</p>
+<p>To run the SELECT statement with a &quot;shared lock&quot;, you may use the <code>sharedLock</code> method on a query:</p>
+<pre><code>DB::table(&apos;users&apos;)-&gt;where(&apos;votes&apos;, &apos;&gt;&apos;, 100)-&gt;sharedLock()-&gt;get();
+</code></pre><p>To &quot;lock for update&quot; on a SELECT statement, you may use the <code>lockForUpdate</code> method on a query:</p>
+<pre><code>DB::table(&apos;users&apos;)-&gt;where(&apos;votes&apos;, &apos;&gt;&apos;, 100)-&gt;lockForUpdate()-&gt;get();
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./database.html" class="navigation navigation-prev " aria-label="Previous page: Getting Started"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./schema.html" class="navigation navigation-next " aria-label="Next page: Schema Builder"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
